@@ -579,7 +579,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"parcel index.html",
+    "build": "parcel build index.html --public-url ./"
   },
   "repository": {
     "type": "git",
@@ -587,7 +589,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Bojne/create-collage/issues"
   },
