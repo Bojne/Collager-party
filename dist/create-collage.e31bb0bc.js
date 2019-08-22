@@ -32993,7 +32993,7 @@ function (_React$Component) {
       }, _react.default.createElement("div", null, _react.default.createElement("img", {
         className: "handle image",
         src: _bach.default,
-        alt: "cow"
+        alt: "imgage"
       })))), _react.default.createElement("div", null, this.state.objects.map(function (obj) {
         return _this2.renderDraggable(obj.emoji, obj.position);
       })));

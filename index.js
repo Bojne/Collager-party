@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Draggable from "react-draggable";
-import cow from "./img/bach.jpg";
+import img from "./img/bach.jpg";
 import "./style.css";
 
 const destination = document.getElementById("root");
@@ -43,7 +43,7 @@ class App extends React.Component {
             onStop={this.handleStop}
           >
             <div>
-              <img className="handle image" src={cow} alt="cow" />
+              <img className="handle image" src={img} alt="imgage" />
             </div>
           </Draggable>
         </div>
