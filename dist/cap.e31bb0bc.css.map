@@ -1,1 +1,0 @@
-{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"cap.e31bb0bc.css","sourceRoot":"..","sourcesContent":[".emoji {\n    size: 100%;\n}\n  \n.image {\n    height: 50px;\n    width: 50px;\n}"]}

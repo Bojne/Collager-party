@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"node_modules/object-assign/index.js":[function(require,module,exports) {
+})({"../../../node_modules/object-assign/index.js":[function(require,module,exports) {
 /*
 object-assign
 (c) Sindre Sorhus
@@ -213,7 +213,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
   return to;
 };
-},{}],"node_modules/prop-types/lib/ReactPropTypesSecret.js":[function(require,module,exports) {
+},{}],"../../../node_modules/prop-types/lib/ReactPropTypesSecret.js":[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -227,7 +227,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],"node_modules/prop-types/checkPropTypes.js":[function(require,module,exports) {
+},{}],"../../../node_modules/prop-types/checkPropTypes.js":[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -323,7 +323,7 @@ checkPropTypes.resetWarningCache = function () {
 };
 
 module.exports = checkPropTypes;
-},{"./lib/ReactPropTypesSecret":"node_modules/prop-types/lib/ReactPropTypesSecret.js"}],"node_modules/react/cjs/react.development.js":[function(require,module,exports) {
+},{"./lib/ReactPropTypesSecret":"../../../node_modules/prop-types/lib/ReactPropTypesSecret.js"}],"../../../node_modules/react/cjs/react.development.js":[function(require,module,exports) {
 /** @license React v16.9.0
  * react.development.js
  *
@@ -2569,7 +2569,7 @@ if ("development" !== "production") {
     module.exports = react;
   })();
 }
-},{"object-assign":"node_modules/object-assign/index.js","prop-types/checkPropTypes":"node_modules/prop-types/checkPropTypes.js"}],"node_modules/react/index.js":[function(require,module,exports) {
+},{"object-assign":"../../../node_modules/object-assign/index.js","prop-types/checkPropTypes":"../../../node_modules/prop-types/checkPropTypes.js"}],"../../../node_modules/react/index.js":[function(require,module,exports) {
 'use strict';
 
 if ("development" === 'production') {
@@ -2577,7 +2577,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.development.js":"node_modules/react/cjs/react.development.js"}],"node_modules/scheduler/cjs/scheduler.development.js":[function(require,module,exports) {
+},{"./cjs/react.development.js":"../../../node_modules/react/cjs/react.development.js"}],"../../../node_modules/scheduler/cjs/scheduler.development.js":[function(require,module,exports) {
 /** @license React v0.15.0
  * scheduler.development.js
  *
@@ -3525,7 +3525,7 @@ if ("development" !== "production") {
     exports.unstable_getFirstCallbackNode = unstable_getFirstCallbackNode;
   })();
 }
-},{}],"node_modules/scheduler/index.js":[function(require,module,exports) {
+},{}],"../../../node_modules/scheduler/index.js":[function(require,module,exports) {
 'use strict';
 
 if ("development" === 'production') {
@@ -3533,7 +3533,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/scheduler.development.js');
 }
-},{"./cjs/scheduler.development.js":"node_modules/scheduler/cjs/scheduler.development.js"}],"node_modules/scheduler/cjs/scheduler-tracing.development.js":[function(require,module,exports) {
+},{"./cjs/scheduler.development.js":"../../../node_modules/scheduler/cjs/scheduler.development.js"}],"../../../node_modules/scheduler/cjs/scheduler-tracing.development.js":[function(require,module,exports) {
 /** @license React v0.15.0
  * scheduler-tracing.development.js
  *
@@ -3941,7 +3941,7 @@ if ("development" !== "production") {
     exports.unstable_unsubscribe = unstable_unsubscribe;
   })();
 }
-},{}],"node_modules/scheduler/tracing.js":[function(require,module,exports) {
+},{}],"../../../node_modules/scheduler/tracing.js":[function(require,module,exports) {
 'use strict';
 
 if ("development" === 'production') {
@@ -3949,7 +3949,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/scheduler-tracing.development.js');
 }
-},{"./cjs/scheduler-tracing.development.js":"node_modules/scheduler/cjs/scheduler-tracing.development.js"}],"node_modules/react-dom/cjs/react-dom.development.js":[function(require,module,exports) {
+},{"./cjs/scheduler-tracing.development.js":"../../../node_modules/scheduler/cjs/scheduler-tracing.development.js"}],"../../../node_modules/react-dom/cjs/react-dom.development.js":[function(require,module,exports) {
 /** @license React v16.9.0
  * react-dom.development.js
  *
@@ -30571,7 +30571,7 @@ if ("development" !== "production") {
     module.exports = reactDom;
   })();
 }
-},{"react":"node_modules/react/index.js","object-assign":"node_modules/object-assign/index.js","prop-types/checkPropTypes":"node_modules/prop-types/checkPropTypes.js","scheduler":"node_modules/scheduler/index.js","scheduler/tracing":"node_modules/scheduler/tracing.js"}],"node_modules/react-dom/index.js":[function(require,module,exports) {
+},{"react":"../../../node_modules/react/index.js","object-assign":"../../../node_modules/object-assign/index.js","prop-types/checkPropTypes":"../../../node_modules/prop-types/checkPropTypes.js","scheduler":"../../../node_modules/scheduler/index.js","scheduler/tracing":"../../../node_modules/scheduler/tracing.js"}],"../../../node_modules/react-dom/index.js":[function(require,module,exports) {
 'use strict';
 
 function checkDCE() {
@@ -30609,7 +30609,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"node_modules/react-draggable/dist/react-draggable.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"../../../node_modules/react-dom/cjs/react-dom.development.js"}],"node_modules/react-draggable/dist/react-draggable.js":[function(require,module,exports) {
 var define;
 var global = arguments[3];
 (function (global, factory) {
@@ -32827,9 +32827,9 @@ var global = arguments[3];
 })));
 
 
-},{"react-dom":"node_modules/react-dom/index.js","react":"node_modules/react/index.js"}],"img/bach.jpg":[function(require,module,exports) {
+},{"react-dom":"../../../node_modules/react-dom/index.js","react":"../../../node_modules/react/index.js"}],"img/bach.jpg":[function(require,module,exports) {
 module.exports = "/bach.18f825da.jpg";
-},{}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -32861,7 +32861,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -32896,12 +32896,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"style.css":[function(require,module,exports) {
+},{"./bundle-url":"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"style.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"_css_loader":"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -33055,7 +33055,7 @@ _reactDom.default.render(_react.default.createElement(App, null), destination);
           })}
         </div>
 */
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","react-draggable":"node_modules/react-draggable/dist/react-draggable.js","./img/bach.jpg":"img/bach.jpg","./style.css":"style.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../../../node_modules/react/index.js","react-dom":"../../../node_modules/react-dom/index.js","react-draggable":"node_modules/react-draggable/dist/react-draggable.js","./img/bach.jpg":"img/bach.jpg","./style.css":"style.css"}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -33083,7 +33083,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54374" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58920" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -33258,5 +33258,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/create-collage.e31bb0bc.js.map
