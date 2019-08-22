@@ -4,6 +4,8 @@ import Draggable from "react-draggable";
 import img from "./img/bach.jpg";
 import "./style.css";
 
+console.log('Can you hear me?');
+
 const destination = document.getElementById("root");
 
 class App extends React.Component {
