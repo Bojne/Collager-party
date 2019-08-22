@@ -2,7 +2,6 @@
   "name": "create-collage",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "dependencies": {
     "abab": "^2.0.0",
     "abbrev": "^1.1.1",
@@ -361,7 +360,6 @@
     "os-tmpdir": "^1.0.2",
     "osenv": "^0.1.5",
     "pako": "^1.0.10",
-    "parcel-bundler": "^1.12.3",
     "parse-asn1": "^5.1.4",
     "parse-json": "^4.0.0",
     "parse5": "^5.1.0",
@@ -577,10 +575,13 @@
     "xtend": "^4.0.2",
     "yallist": "^3.0.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  },
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"parcel index.html",
+    "start": "parcel index.html",
     "build": "parcel build index.html --public-url ./"
   },
   "repository": {
