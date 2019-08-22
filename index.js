@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Draggable from "react-draggable";
-import cow from "./img/cow.png";
+import cow from "./img/bach.jpg";
 import "./style.css";
 
 const destination = document.getElementById("root");
@@ -12,24 +12,19 @@ class App extends React.Component {
 
     this.state = {
       objects: [
-        {
-          emoji: "🍋"
-        },
-        {
-          emoji: "🗽"
-        },
-        {
-          emoji: "🍤"
-        },
-        {
-          emoji: "🧚🏻‍♂️"
-        },
-        {
-          emoji: "🥦"
-        },
-        {
-          emoji: "🏖"
-        }
+        { emoji: "🍋" },
+        { emoji: "🗽" },
+        { emoji: "🍤" },
+        { emoji: "🧚🏻‍" },
+        { emoji: "🥦" },
+        { emoji: "🚀" },
+        { emoji: "💣" },
+        { emoji: "💎" },
+        { emoji: "💡" },
+        { emoji: "🏆‍" },
+        { emoji: "🏓" },
+        { emoji: "🌶" },
+        
       ]
     };
   }

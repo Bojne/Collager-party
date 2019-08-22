@@ -1,1 +1,1 @@
-{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"create-collage.e31bb0bc.css","sourceRoot":"..","sourcesContent":[".emoji {\n    size: 100%;\n    border: 1px;\n}\n  \n.image {\n    height: 50px;\n    width: 70px;\n}"]}
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"create-collage.e31bb0bc.css","sourceRoot":"..","sourcesContent":[".emoji {\n    font-size: 60px;\n}\n\n.image {\n    border: 2px solid green;\n}\n"]}

@@ -32827,8 +32827,8 @@ var global = arguments[3];
 })));
 
 
-},{"react-dom":"node_modules/react-dom/index.js","react":"node_modules/react/index.js"}],"img/cow.png":[function(require,module,exports) {
-module.exports = "/cow.7b2bed97.png";
+},{"react-dom":"node_modules/react-dom/index.js","react":"node_modules/react/index.js"}],"img/bach.jpg":[function(require,module,exports) {
+module.exports = "/bach.18f825da.jpg";
 },{}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
@@ -32910,7 +32910,7 @@ var _reactDom = _interopRequireDefault(require("react-dom"));
 
 var _reactDraggable = _interopRequireDefault(require("react-draggable"));
 
-var _cow = _interopRequireDefault(require("./img/cow.png"));
+var _bach = _interopRequireDefault(require("./img/bach.jpg"));
 
 require("./style.css");
 
@@ -32955,11 +32955,23 @@ function (_React$Component) {
       }, {
         emoji: "🍤"
       }, {
-        emoji: "🧚🏻‍♂️"
+        emoji: "🧚🏻‍"
       }, {
         emoji: "🥦"
       }, {
-        emoji: "🏖"
+        emoji: "🚀"
+      }, {
+        emoji: "💣"
+      }, {
+        emoji: "💎"
+      }, {
+        emoji: "💡"
+      }, {
+        emoji: "🏆‍"
+      }, {
+        emoji: "🏓"
+      }, {
+        emoji: "🌶"
       }]
     };
     return _this;
@@ -32980,7 +32992,7 @@ function (_React$Component) {
         onStop: this.handleStop
       }, _react.default.createElement("div", null, _react.default.createElement("img", {
         className: "handle image",
-        src: _cow.default,
+        src: _bach.default,
         alt: "cow"
       })))), _react.default.createElement("div", null, this.state.objects.map(function (obj) {
         return _this2.renderDraggable(obj.emoji, obj.position);
@@ -33042,7 +33054,7 @@ _reactDom.default.render(_react.default.createElement(App, null), destination);
           })}
         </div>
 */
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","react-draggable":"node_modules/react-draggable/dist/react-draggable.js","./img/cow.png":"img/cow.png","./style.css":"style.css"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","react-draggable":"node_modules/react-draggable/dist/react-draggable.js","./img/bach.jpg":"img/bach.jpg","./style.css":"style.css"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

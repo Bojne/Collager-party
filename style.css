@@ -1,9 +1,7 @@
 .emoji {
-    size: 100%;
-    border: 1px;
+    font-size: 60px;
 }
-  
+
 .image {
-    height: 50px;
-    width: 70px;
+    border: 2px solid green;
 }
