@@ -1,7 +1,11 @@
+body{
+    background-color: gray;
+}
+
 .emoji {
     font-size: 60px;
 }
 
 .image {
-    border: 2px solid green;
+    width: 500px;
 }
