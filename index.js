@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import Draggable from "react-draggable";
 import animal from "./img/animal/shrimps_PNG18277.png";
 import food from "./img/food/cucumber_PNG12621.png";
-import people from "./img/people/baby_PNG51764.png";
+import people from "./img/people/baby_PNG51737.png";
 import stuff from "./img/objects/mountain_PNG30.png";
 import test from "./img/objects/phone_hand_PNG91.png";
 
@@ -17,14 +17,14 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      color: "#6bc5d2",
+      color: "#ffcbcb",
       objects: [
         { emoji: "👇" },
         { emoji: "🗿" },
         { emoji: "🍤" },
         { emoji: "💡" },
         { emoji: "🥦" },
-        { emoji: "🚀" },
+        { emoji: "🚀" }
       ],
       images: [{ ig: food }, { ig: animal }, { ig: people }, { ig: stuff }]
     }; // Emojis
@@ -44,13 +44,13 @@ class App extends React.Component {
       <div>
         <div>
           <p>
-            👇Customize your background{" "}
-            <a href="https://colorhunt.co/">color </a>here 🎨
+          🎨Customize page background{" "}
+            <a href="https://colorhunt.co/">color </a>here 👉
+            <input
+              value={this.state.color}
+              onChange={evt => this.updateInputValue(evt)}
+            />
           </p>
-          <input
-            value={this.state.color}
-            onChange={evt => this.updateInputValue(evt)}
-          />
         </div>
 
         <div>

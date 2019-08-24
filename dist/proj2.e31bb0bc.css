@@ -1,13 +1,18 @@
-body{
-    background-color: gray;
+body {
+  background-color: gray;
 }
 
 .emoji {
-    font-size: 60px;
+  font-size: 60px;
 }
 
 .image {
-    width: 500px;
+  width: 500px;
+}
+
+p, h1 {
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Merriweather", serif;
 }
 
 

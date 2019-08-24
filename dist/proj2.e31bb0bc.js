@@ -32831,8 +32831,8 @@ var global = arguments[3];
 module.exports = "/shrimps_PNG18277.6fd18bef.png";
 },{}],"img/food/cucumber_PNG12621.png":[function(require,module,exports) {
 module.exports = "/cucumber_PNG12621.2a5a8df2.png";
-},{}],"img/people/baby_PNG51764.png":[function(require,module,exports) {
-module.exports = "/baby_PNG51764.5c25753e.png";
+},{}],"img/people/baby_PNG51737.png":[function(require,module,exports) {
+module.exports = "/baby_PNG51737.1316362f.png";
 },{}],"img/objects/mountain_PNG30.png":[function(require,module,exports) {
 module.exports = "/mountain_PNG30.361e7551.png";
 },{}],"img/objects/phone_hand_PNG91.png":[function(require,module,exports) {
@@ -32922,7 +32922,7 @@ var _shrimps_PNG = _interopRequireDefault(require("./img/animal/shrimps_PNG18277
 
 var _cucumber_PNG = _interopRequireDefault(require("./img/food/cucumber_PNG12621.png"));
 
-var _baby_PNG = _interopRequireDefault(require("./img/people/baby_PNG51764.png"));
+var _baby_PNG = _interopRequireDefault(require("./img/people/baby_PNG51737.png"));
 
 var _mountain_PNG = _interopRequireDefault(require("./img/objects/mountain_PNG30.png"));
 
@@ -32967,7 +32967,7 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this, props));
     _this.state = {
-      color: "#6bc5d2",
+      color: "#ffcbcb",
       objects: [{
         emoji: "👇"
       }, {
@@ -33008,14 +33008,14 @@ function (_React$Component) {
         userSelect: "none",
         touchAction: "none"
       };
-      return _react.default.createElement("div", null, _react.default.createElement("div", null, _react.default.createElement("p", null, "\uD83D\uDC47Customize your background", " ", _react.default.createElement("a", {
+      return _react.default.createElement("div", null, _react.default.createElement("div", null, _react.default.createElement("p", null, "\uD83C\uDFA8Customize page background", " ", _react.default.createElement("a", {
         href: "https://colorhunt.co/"
-      }, "color "), "here \uD83C\uDFA8"), _react.default.createElement("input", {
+      }, "color "), "here \uD83D\uDC49", _react.default.createElement("input", {
         value: this.state.color,
         onChange: function onChange(evt) {
           return _this2.updateInputValue(evt);
         }
-      })), _react.default.createElement("div", null, this.state.images.map(function (obj) {
+      }))), _react.default.createElement("div", null, this.state.images.map(function (obj) {
         return _this2.renderImgDraggable(obj.ig);
       })), _react.default.createElement("div", null, this.state.objects.map(function (obj) {
         return _this2.renderEmojiDraggable(obj.emoji);
@@ -33069,7 +33069,7 @@ function (_React$Component) {
 }(_react.default.Component);
 
 _reactDom.default.render(_react.default.createElement(App, null), destination);
-},{"react":"../../../node_modules/react/index.js","react-dom":"../../../node_modules/react-dom/index.js","react-draggable":"node_modules/react-draggable/dist/react-draggable.js","./img/animal/shrimps_PNG18277.png":"img/animal/shrimps_PNG18277.png","./img/food/cucumber_PNG12621.png":"img/food/cucumber_PNG12621.png","./img/people/baby_PNG51764.png":"img/people/baby_PNG51764.png","./img/objects/mountain_PNG30.png":"img/objects/mountain_PNG30.png","./img/objects/phone_hand_PNG91.png":"img/objects/phone_hand_PNG91.png","./style.css":"style.css"}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../../../node_modules/react/index.js","react-dom":"../../../node_modules/react-dom/index.js","react-draggable":"node_modules/react-draggable/dist/react-draggable.js","./img/animal/shrimps_PNG18277.png":"img/animal/shrimps_PNG18277.png","./img/food/cucumber_PNG12621.png":"img/food/cucumber_PNG12621.png","./img/people/baby_PNG51737.png":"img/people/baby_PNG51737.png","./img/objects/mountain_PNG30.png":"img/objects/mountain_PNG30.png","./img/objects/phone_hand_PNG91.png":"img/objects/phone_hand_PNG91.png","./style.css":"style.css"}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
