@@ -1,7 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Draggable from "react-draggable";
-import img from "./img/animal/shrimps_PNG18277.png";
+import animal from "./img/animal/shrimps_PNG18277.png";
+import food from "./img/food/cucumber_PNG12621.png";
+import people from "./img/people/baby_PNG51764.png";
+import stuff from "./img/objects/mountain_PNG30.png";
+
 import "./style.css";
 
 console.log("Can you hear me?");
@@ -26,58 +30,67 @@ class App extends React.Component {
         { emoji: "🏆‍" },
         { emoji: "🏓" },
         { emoji: "🌶" }
+      ],
+      images: [
+        { ig: food  },
+        { ig: animal  },
+        { ig: people  },
+        { ig: stuff  }
       ]
     }; // Emojis
   }
-
   render() {
-    // <Helmet bodyAttributes={{style: 'background-color : #fff'}}/>
-    const dragHandlers = { onStart: this.onStart, onStop: this.onStop };
-    // const style = { 'background-color': this.state.color };
-    // console.log(this.state.color)
     document.body.style.backgroundColor = this.state.color;
     console.log(this.state.color);
+
+    const scale = 0.3;
+    const styleScale = {
+      width: "100px",
+      userSelect: "none",
+      touchAction: "none"
+    };
+
     return (
-      <div >
+      <div>
         <input
           value={this.state.color}
           onChange={evt => this.updateInputValue(evt)}
         />
         <div>
-          <Draggable
-            handle=".handle"
-            {...dragHandlers}
-          >
-            <div>
-              <img className="handle image" src={img} alt="imgage" />
-            </div>
-          </Draggable>
-        </div>
-
-        <div>
-          {this.state.objects.map(obj => {
-            return this.renderDraggable(obj.emoji);
+          {this.state.images.map(obj => {
+            return this.renderImgDraggable(obj.ig);
           })}
         </div>
+        <div>
+          {this.state.objects.map(obj => {
+            return this.renderEmojiDraggable(obj.emoji);
+          })}
+        </div>
+        
       </div>
     );
   }
 
-  renderDraggable(emoji, position) {
+  renderEmojiDraggable(emoji) {
+    const dragHandlers = { onStart: this.onStart, onStop: this.onStop };
+
     return (
       <Draggable
         handle=".handle"
-        position={null}
-        scale={1}
-        onStart={this.handleStart}
-        onDrag={this.handleDrag}
-        onStop={this.handleStop}
+        {...dragHandlers}
       >
-        <div>
-          <div className="handle">
-            <div className="emoji">{emoji}</div>
-          </div>
-        </div>
+        <div className="handle emoji">{emoji}</div>
+      </Draggable>
+    );
+  }
+  renderImgDraggable(ig) {
+    const dragHandlers = { onStart: this.onStart, onStop: this.onStop };
+    return (
+      <Draggable
+        handle=".handle"
+        {...dragHandlers}
+      >
+        <img className="handle image" src={ig} alt="img not here" />
       </Draggable>
     );
   }

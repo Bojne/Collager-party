@@ -32829,6 +32829,12 @@ var global = arguments[3];
 
 },{"react-dom":"../../../node_modules/react-dom/index.js","react":"../../../node_modules/react/index.js"}],"img/animal/shrimps_PNG18277.png":[function(require,module,exports) {
 module.exports = "/shrimps_PNG18277.6fd18bef.png";
+},{}],"img/food/cucumber_PNG12621.png":[function(require,module,exports) {
+module.exports = "/cucumber_PNG12621.2a5a8df2.png";
+},{}],"img/people/baby_PNG51764.png":[function(require,module,exports) {
+module.exports = "/baby_PNG51764.5c25753e.png";
+},{}],"img/objects/mountain_PNG30.png":[function(require,module,exports) {
+module.exports = "/mountain_PNG30.361e7551.png";
 },{}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
@@ -32912,6 +32918,12 @@ var _reactDraggable = _interopRequireDefault(require("react-draggable"));
 
 var _shrimps_PNG = _interopRequireDefault(require("./img/animal/shrimps_PNG18277.png"));
 
+var _cucumber_PNG = _interopRequireDefault(require("./img/food/cucumber_PNG12621.png"));
+
+var _baby_PNG = _interopRequireDefault(require("./img/people/baby_PNG51764.png"));
+
+var _mountain_PNG = _interopRequireDefault(require("./img/objects/mountain_PNG30.png"));
+
 require("./style.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -32976,6 +32988,15 @@ function (_React$Component) {
         emoji: "🏓"
       }, {
         emoji: "🌶"
+      }],
+      images: [{
+        ig: _cucumber_PNG.default
+      }, {
+        ig: _shrimps_PNG.default
+      }, {
+        ig: _baby_PNG.default
+      }, {
+        ig: _mountain_PNG.default
       }]
     }; // Emojis
 
@@ -32987,45 +33008,52 @@ function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      // <Helmet bodyAttributes={{style: 'background-color : #fff'}}/>
-      var dragHandlers = {
-        onStart: this.onStart,
-        onStop: this.onStop
-      }; // const style = { 'background-color': this.state.color };
-      // console.log(this.state.color)
-
       document.body.style.backgroundColor = this.state.color;
       console.log(this.state.color);
+      var scale = 0.3;
+      var styleScale = {
+        width: "100px",
+        userSelect: "none",
+        touchAction: "none"
+      };
       return _react.default.createElement("div", null, _react.default.createElement("input", {
         value: this.state.color,
         onChange: function onChange(evt) {
           return _this2.updateInputValue(evt);
         }
-      }), _react.default.createElement("div", null, _react.default.createElement(_reactDraggable.default, _extends({
-        handle: ".handle"
-      }, dragHandlers), _react.default.createElement("div", null, _react.default.createElement("img", {
-        className: "handle image",
-        src: _shrimps_PNG.default,
-        alt: "imgage"
-      })))), _react.default.createElement("div", null, this.state.objects.map(function (obj) {
-        return _this2.renderDraggable(obj.emoji);
+      }), _react.default.createElement("div", null, this.state.images.map(function (obj) {
+        return _this2.renderImgDraggable(obj.ig);
+      })), _react.default.createElement("div", null, this.state.objects.map(function (obj) {
+        return _this2.renderEmojiDraggable(obj.emoji);
       })));
     }
   }, {
-    key: "renderDraggable",
-    value: function renderDraggable(emoji, position) {
-      return _react.default.createElement(_reactDraggable.default, {
-        handle: ".handle",
-        position: null,
-        scale: 1,
-        onStart: this.handleStart,
-        onDrag: this.handleDrag,
-        onStop: this.handleStop
-      }, _react.default.createElement("div", null, _react.default.createElement("div", {
-        className: "handle"
-      }, _react.default.createElement("div", {
-        className: "emoji"
-      }, emoji))));
+    key: "renderEmojiDraggable",
+    value: function renderEmojiDraggable(emoji) {
+      var dragHandlers = {
+        onStart: this.onStart,
+        onStop: this.onStop
+      };
+      return _react.default.createElement(_reactDraggable.default, _extends({
+        handle: ".handle"
+      }, dragHandlers), _react.default.createElement("div", {
+        className: "handle emoji"
+      }, emoji));
+    }
+  }, {
+    key: "renderImgDraggable",
+    value: function renderImgDraggable(ig) {
+      var dragHandlers = {
+        onStart: this.onStart,
+        onStop: this.onStop
+      };
+      return _react.default.createElement(_reactDraggable.default, _extends({
+        handle: ".handle"
+      }, dragHandlers), _react.default.createElement("img", {
+        className: "handle image",
+        src: ig,
+        alt: "img not here"
+      }));
     }
   }, {
     key: "updateInputValue",
@@ -33040,7 +33068,7 @@ function (_React$Component) {
 }(_react.default.Component);
 
 _reactDom.default.render(_react.default.createElement(App, null), destination);
-},{"react":"../../../node_modules/react/index.js","react-dom":"../../../node_modules/react-dom/index.js","react-draggable":"node_modules/react-draggable/dist/react-draggable.js","./img/animal/shrimps_PNG18277.png":"img/animal/shrimps_PNG18277.png","./style.css":"style.css"}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../../../node_modules/react/index.js","react-dom":"../../../node_modules/react-dom/index.js","react-draggable":"node_modules/react-draggable/dist/react-draggable.js","./img/animal/shrimps_PNG18277.png":"img/animal/shrimps_PNG18277.png","./img/food/cucumber_PNG12621.png":"img/food/cucumber_PNG12621.png","./img/people/baby_PNG51764.png":"img/people/baby_PNG51764.png","./img/objects/mountain_PNG30.png":"img/objects/mountain_PNG30.png","./style.css":"style.css"}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
