@@ -5,6 +5,7 @@ import animal from "./img/animal/shrimps_PNG18277.png";
 import food from "./img/food/cucumber_PNG12621.png";
 import people from "./img/people/baby_PNG51764.png";
 import stuff from "./img/objects/mountain_PNG30.png";
+import test from "./img/objects/phone_hand_PNG91.png";
 
 import "./style.css";
 
@@ -18,25 +19,14 @@ class App extends React.Component {
     this.state = {
       color: "#6bc5d2",
       objects: [
-        { emoji: "🍋" },
-        { emoji: "🗽" },
+        { emoji: "👇" },
+        { emoji: "🗿" },
         { emoji: "🍤" },
-        { emoji: "🧚🏻‍" },
+        { emoji: "💡" },
         { emoji: "🥦" },
         { emoji: "🚀" },
-        { emoji: "💣" },
-        { emoji: "💎" },
-        { emoji: "💡" },
-        { emoji: "🏆‍" },
-        { emoji: "🏓" },
-        { emoji: "🌶" }
       ],
-      images: [
-        { ig: food  },
-        { ig: animal  },
-        { ig: people  },
-        { ig: stuff  }
-      ]
+      images: [{ ig: food }, { ig: animal }, { ig: people }, { ig: stuff }]
     }; // Emojis
   }
   render() {
@@ -52,10 +42,17 @@ class App extends React.Component {
 
     return (
       <div>
-        <input
-          value={this.state.color}
-          onChange={evt => this.updateInputValue(evt)}
-        />
+        <div>
+          <p>
+            👇Customize your background{" "}
+            <a href="https://colorhunt.co/">color </a>here 🎨
+          </p>
+          <input
+            value={this.state.color}
+            onChange={evt => this.updateInputValue(evt)}
+          />
+        </div>
+
         <div>
           {this.state.images.map(obj => {
             return this.renderImgDraggable(obj.ig);
@@ -66,7 +63,9 @@ class App extends React.Component {
             return this.renderEmojiDraggable(obj.emoji);
           })}
         </div>
-        
+        <Draggable handle=".handle" onStart={console.log("sup!")}>
+          <img className="handle image" src={test} alt="img not here" />
+        </Draggable>
       </div>
     );
   }
@@ -75,19 +74,17 @@ class App extends React.Component {
     const dragHandlers = { onStart: this.onStart, onStop: this.onStop };
 
     return (
-      <Draggable
-        handle=".handle"
-        {...dragHandlers}
-      >
+      <Draggable handle=".handle" {...dragHandlers}>
         <div className="handle emoji">{emoji}</div>
       </Draggable>
     );
   }
   renderImgDraggable(ig) {
-    const dragHandlers = { onStart: this.onStart, onStop: this.onStop };
+    const dragHandlers = { onStop: this.onStop };
     return (
       <Draggable
         handle=".handle"
+        onStart={console.log("sup!")}
         {...dragHandlers}
       >
         <img className="handle image" src={ig} alt="img not here" />

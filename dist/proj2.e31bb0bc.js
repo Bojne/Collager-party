@@ -32835,6 +32835,8 @@ module.exports = "/cucumber_PNG12621.2a5a8df2.png";
 module.exports = "/baby_PNG51764.5c25753e.png";
 },{}],"img/objects/mountain_PNG30.png":[function(require,module,exports) {
 module.exports = "/mountain_PNG30.361e7551.png";
+},{}],"img/objects/phone_hand_PNG91.png":[function(require,module,exports) {
+module.exports = "/phone_hand_PNG91.3115efdf.png";
 },{}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
@@ -32924,6 +32926,8 @@ var _baby_PNG = _interopRequireDefault(require("./img/people/baby_PNG51764.png")
 
 var _mountain_PNG = _interopRequireDefault(require("./img/objects/mountain_PNG30.png"));
 
+var _phone_hand_PNG = _interopRequireDefault(require("./img/objects/phone_hand_PNG91.png"));
+
 require("./style.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -32965,29 +32969,17 @@ function (_React$Component) {
     _this.state = {
       color: "#6bc5d2",
       objects: [{
-        emoji: "🍋"
+        emoji: "👇"
       }, {
-        emoji: "🗽"
+        emoji: "🗿"
       }, {
         emoji: "🍤"
       }, {
-        emoji: "🧚🏻‍"
+        emoji: "💡"
       }, {
         emoji: "🥦"
       }, {
         emoji: "🚀"
-      }, {
-        emoji: "💣"
-      }, {
-        emoji: "💎"
-      }, {
-        emoji: "💡"
-      }, {
-        emoji: "🏆‍"
-      }, {
-        emoji: "🏓"
-      }, {
-        emoji: "🌶"
       }],
       images: [{
         ig: _cucumber_PNG.default
@@ -33016,15 +33008,24 @@ function (_React$Component) {
         userSelect: "none",
         touchAction: "none"
       };
-      return _react.default.createElement("div", null, _react.default.createElement("input", {
+      return _react.default.createElement("div", null, _react.default.createElement("div", null, _react.default.createElement("p", null, "\uD83D\uDC47Customize your background", " ", _react.default.createElement("a", {
+        href: "https://colorhunt.co/"
+      }, "color "), "here \uD83C\uDFA8"), _react.default.createElement("input", {
         value: this.state.color,
         onChange: function onChange(evt) {
           return _this2.updateInputValue(evt);
         }
-      }), _react.default.createElement("div", null, this.state.images.map(function (obj) {
+      })), _react.default.createElement("div", null, this.state.images.map(function (obj) {
         return _this2.renderImgDraggable(obj.ig);
       })), _react.default.createElement("div", null, this.state.objects.map(function (obj) {
         return _this2.renderEmojiDraggable(obj.emoji);
+      })), _react.default.createElement(_reactDraggable.default, {
+        handle: ".handle",
+        onStart: console.log("sup!")
+      }, _react.default.createElement("img", {
+        className: "handle image",
+        src: _phone_hand_PNG.default,
+        alt: "img not here"
       })));
     }
   }, {
@@ -33044,11 +33045,11 @@ function (_React$Component) {
     key: "renderImgDraggable",
     value: function renderImgDraggable(ig) {
       var dragHandlers = {
-        onStart: this.onStart,
         onStop: this.onStop
       };
       return _react.default.createElement(_reactDraggable.default, _extends({
-        handle: ".handle"
+        handle: ".handle",
+        onStart: console.log("sup!")
       }, dragHandlers), _react.default.createElement("img", {
         className: "handle image",
         src: ig,
@@ -33068,7 +33069,7 @@ function (_React$Component) {
 }(_react.default.Component);
 
 _reactDom.default.render(_react.default.createElement(App, null), destination);
-},{"react":"../../../node_modules/react/index.js","react-dom":"../../../node_modules/react-dom/index.js","react-draggable":"node_modules/react-draggable/dist/react-draggable.js","./img/animal/shrimps_PNG18277.png":"img/animal/shrimps_PNG18277.png","./img/food/cucumber_PNG12621.png":"img/food/cucumber_PNG12621.png","./img/people/baby_PNG51764.png":"img/people/baby_PNG51764.png","./img/objects/mountain_PNG30.png":"img/objects/mountain_PNG30.png","./style.css":"style.css"}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../../../node_modules/react/index.js","react-dom":"../../../node_modules/react-dom/index.js","react-draggable":"node_modules/react-draggable/dist/react-draggable.js","./img/animal/shrimps_PNG18277.png":"img/animal/shrimps_PNG18277.png","./img/food/cucumber_PNG12621.png":"img/food/cucumber_PNG12621.png","./img/people/baby_PNG51764.png":"img/people/baby_PNG51764.png","./img/objects/mountain_PNG30.png":"img/objects/mountain_PNG30.png","./img/objects/phone_hand_PNG91.png":"img/objects/phone_hand_PNG91.png","./style.css":"style.css"}],"../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
