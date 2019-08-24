@@ -5,7 +5,7 @@ import animal from "./img/animal/shrimps_PNG18277.png";
 import food from "./img/food/cucumber_PNG12621.png";
 import people from "./img/people/baby_PNG51737.png";
 import stuff from "./img/objects/mountain_PNG30.png";
-import test from "./img/objects/phone_hand_PNG91.png";
+import hand from "./img/objects/phone_hand_PNG91.png";
 
 import "./style.css";
 
@@ -18,6 +18,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       color: "#ffcbcb",
+      url: '',
       objects: [
         { emoji: "👇" },
         { emoji: "🗿" },
@@ -26,8 +27,14 @@ class App extends React.Component {
         { emoji: "🥦" },
         { emoji: "🚀" }
       ],
-      images: [{ ig: food }, { ig: animal }, { ig: people }, { ig: stuff }]
-    }; // Emojis
+      images: [
+        { ig: food },
+        { ig: animal },
+        { ig: people },
+        { ig: stuff },
+        { ig: hand }
+      ]
+    };
   }
   render() {
     document.body.style.backgroundColor = this.state.color;
@@ -44,14 +51,26 @@ class App extends React.Component {
       <div>
         <div>
           <p>
-          🎨Customize page background{" "}
-            <a href="https://colorhunt.co/">color </a>here 👉
+            🎨Customize ur background <a href="https://colorhunt.co/">color </a>
+            here 👉
             <input
               value={this.state.color}
-              onChange={evt => this.updateInputValue(evt)}
+              onChange={evt => this.updateColor(evt)}
             />
           </p>
         </div>
+        <div>
+          <p>
+            Add new pic👏: 
+            <input
+              value= {this.state.url}
+              onChange={ evt => this.updateImage(evt)}
+            />
+          </p>
+        </div>
+        <Draggable handle=".handle" onStart={console.log("sup!")}>
+          <img className="handle image" src={this.state.url} alt="Add your own link!🔗" />
+        </Draggable>
 
         <div>
           {this.state.images.map(obj => {
@@ -63,9 +82,7 @@ class App extends React.Component {
             return this.renderEmojiDraggable(obj.emoji);
           })}
         </div>
-        <Draggable handle=".handle" onStart={console.log("sup!")}>
-          <img className="handle image" src={test} alt="img not here" />
-        </Draggable>
+        
       </div>
     );
   }
@@ -91,9 +108,14 @@ class App extends React.Component {
       </Draggable>
     );
   }
-  updateInputValue(evt) {
+  updateColor(evt) {
     this.setState({
       color: evt.target.value
+    });
+  }
+  updateImage(evt) {
+    this.setState({
+      url: evt.target.value
     });
   }
 }
