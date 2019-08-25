@@ -33160,7 +33160,11 @@ function (_React$Component) {
         userSelect: "none",
         touchAction: "none"
       };
-      return _react.default.createElement("div", null, _react.default.createElement(_reactDraggable.default, {
+      return _react.default.createElement("div", null, _react.default.createElement("p", null, "Build by", " ", _react.default.createElement("a", {
+        href: "https://www.facebook.com/bojne.john"
+      }, "Yueh Han Huang"), ". If you like it, leave a \u2B50\uFE0F at my ", _react.default.createElement("a", {
+        href: "hhttps://github.com/Bojne/create-collage"
+      }, "GitHub Repo"), ", \uD83D\uDE4F!"), _react.default.createElement(_reactDraggable.default, {
         handle: ".handle",
         onStart: console.log("sup!")
       }, _react.default.createElement("img", {

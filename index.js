@@ -101,6 +101,12 @@ class App extends React.Component {
 
     return (
       <div>
+        <p>
+          Build by{" "}
+          <a href="https://www.facebook.com/bojne.john">Yueh Han Huang</a>. If
+          you like it, leave a ⭐️ at my <a href="hhttps://github.com/Bojne/create-collage">GitHub Repo</a>, 🙏!
+        </p>
+
         <Draggable handle=".handle" onStart={console.log("sup!")}>
           <img
             className="handle bimage"
