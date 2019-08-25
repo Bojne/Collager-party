@@ -142,7 +142,7 @@ class App extends React.Component {
         </div>
         <div>
           <p>
-            Add new pic👏:
+            Add a new pic👏:
             <input
               value={this.state.url}
               onChange={evt => this.updateImage(evt)}
