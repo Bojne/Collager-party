@@ -1,0 +1,23 @@
+body {
+  background-color: gray;
+}
+
+.emoji {
+  font-size: 60px;
+}
+
+.image {
+  width: 200px;
+}
+
+.bimage {
+  width: 400px;
+}
+
+p, h1 {
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Merriweather", serif;
+}
+
+
+/*# sourceMappingURL=/Collage-App.e31bb0bc.css.map */

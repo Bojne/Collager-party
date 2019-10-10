@@ -85,7 +85,7 @@ class App extends React.Component {
         { ig: stuff7 },
 
         { ig: hand }
-      ].filter(item => Math.random() > 0.9)
+      ].filter(item => Math.random() > 0.81)
     };
   }
   render() {
