@@ -1,6 +1,6 @@
 ### Welcome to the collager party 🎉
 
-[!Art Top](./arts/collage04.png)
+![Art Top](./arts/collage04.png)
 
 Do your own intereative creativity experiment on [the web](collager.party). 
 
@@ -15,7 +15,7 @@ If you are bored with collage objects, reload the page for new surprise!
 
 ![Art2](./arts/collage01.png)
 
-![Art3](./arts/back2.png)
+![Art3](./arts/bach2.png)
 
 ---
 A Hacklodge 2019 project @ Menlo Park, SF. Built by Yueh Han Haung('http://fb.me/bojne.john').  
