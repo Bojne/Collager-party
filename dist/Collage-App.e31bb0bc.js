@@ -66190,8 +66190,6 @@ module.exports = "/hands_PNG958.e813aa6b.png";
 module.exports = "/finger_PNG6307.e697ef2a.png";
 },{}],"img/objects/hands_PNG944.png":[function(require,module,exports) {
 module.exports = "/hands_PNG944.5c66134b.png";
-},{}],"img/bach.jpg":[function(require,module,exports) {
-module.exports = "/bach.18f825da.jpg";
 },{}],"img/objects/phone_hand_PNG91.png":[function(require,module,exports) {
 module.exports = "/phone_hand_PNG91.3115efdf.png";
 },{}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
@@ -66332,8 +66330,6 @@ var _hands_PNG = _interopRequireDefault(require("./img/objects/hands_PNG958.png"
 var _finger_PNG = _interopRequireDefault(require("./img/objects/finger_PNG6307.png"));
 
 var _hands_PNG2 = _interopRequireDefault(require("./img/objects/hands_PNG944.png"));
-
-var _bach = _interopRequireDefault(require("./img/bach.jpg"));
 
 var _phone_hand_PNG = _interopRequireDefault(require("./img/objects/phone_hand_PNG91.png"));
 
@@ -66494,7 +66490,7 @@ function (_React$Component) {
       }), _react.default.createElement("p", null, "Create by ", " ", _react.default.createElement("a", {
         href: "https://www.facebook.com/bojne.john"
       }, "Yueh Han Huang"), ". Btw, give a \u2B50\uFE0F to my ", _react.default.createElement("a", {
-        href: "hhttps://github.com/Bojne/create-collage"
+        href: "https://github.com/Bojne/Collager-party"
       }, "GitHub Repo"), " is appreciated \uD83D\uDC4F."));
     }
   }, {
@@ -66550,7 +66546,7 @@ function (_React$Component) {
 }(_react.default.Component);
 
 _reactDom.default.render(_react.default.createElement(App, null), destination);
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","react-color":"node_modules/react-color/lib/index.js","react-draggable":"node_modules/react-draggable/dist/react-draggable.js","@material-ui/core/TextField":"node_modules/@material-ui/core/esm/TextField/index.js","./img/animal/harbor_seal_PNG1.png":"img/animal/harbor_seal_PNG1.png","./img/animal/shrimps_PNG18277.png":"img/animal/shrimps_PNG18277.png","./img/animal/pokemon_PNG110.png":"img/animal/pokemon_PNG110.png","./img/animal/shark_PNG18811.png":"img/animal/shark_PNG18811.png","./img/animal/giraffe_PNG13518.png":"img/animal/giraffe_PNG13518.png","./img/animal/—Pngtree—black and white cow_3477228.png":"img/animal/—Pngtree—black and white cow_3477228.png","./img/food/fried_egg_PNG79.png":"img/food/fried_egg_PNG79.png","./img/food/bean.png":"img/food/bean.png","./img/food/lime_PNG52.png":"img/food/lime_PNG52.png","./img/food/cauliflower_PNG12673.png":"img/food/cauliflower_PNG12673.png","./img/food/sushi_PNG9204.png":"img/food/sushi_PNG9204.png","./img/food/bacon_PNG10917.png":"img/food/bacon_PNG10917.png","./img/food/bagel_PNG74.png":"img/food/bagel_PNG74.png","./img/people/baby_PNG51737.png":"img/people/baby_PNG51737.png","./img/people/astronaut_PNG47.png":"img/people/astronaut_PNG47.png","./img/people/baby_PNG51764.png":"img/people/baby_PNG51764.png","./img/people/leonardo_dicaprio_PNG43.png":"img/people/leonardo_dicaprio_PNG43.png","./img/people/thinking_woman_PNG11634.png":"img/people/thinking_woman_PNG11634.png","./img/people/dancer_PNG97.png":"img/people/dancer_PNG97.png","./img/people/baby_PNG17912.png":"img/people/baby_PNG17912.png","./img/objects/mountain_PNG30.png":"img/objects/mountain_PNG30.png","./img/objects/alarm_clock_PNG94.png":"img/objects/alarm_clock_PNG94.png","./img/objects/earth_PNG18.png":"img/objects/earth_PNG18.png","./img/objects/mountain_PNG6.png":"img/objects/mountain_PNG6.png","./img/objects/hands_PNG958.png":"img/objects/hands_PNG958.png","./img/objects/finger_PNG6307.png":"img/objects/finger_PNG6307.png","./img/objects/hands_PNG944.png":"img/objects/hands_PNG944.png","./img/bach.jpg":"img/bach.jpg","./img/objects/phone_hand_PNG91.png":"img/objects/phone_hand_PNG91.png","./style.css":"style.css"}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","react-color":"node_modules/react-color/lib/index.js","react-draggable":"node_modules/react-draggable/dist/react-draggable.js","@material-ui/core/TextField":"node_modules/@material-ui/core/esm/TextField/index.js","./img/animal/harbor_seal_PNG1.png":"img/animal/harbor_seal_PNG1.png","./img/animal/shrimps_PNG18277.png":"img/animal/shrimps_PNG18277.png","./img/animal/pokemon_PNG110.png":"img/animal/pokemon_PNG110.png","./img/animal/shark_PNG18811.png":"img/animal/shark_PNG18811.png","./img/animal/giraffe_PNG13518.png":"img/animal/giraffe_PNG13518.png","./img/animal/—Pngtree—black and white cow_3477228.png":"img/animal/—Pngtree—black and white cow_3477228.png","./img/food/fried_egg_PNG79.png":"img/food/fried_egg_PNG79.png","./img/food/bean.png":"img/food/bean.png","./img/food/lime_PNG52.png":"img/food/lime_PNG52.png","./img/food/cauliflower_PNG12673.png":"img/food/cauliflower_PNG12673.png","./img/food/sushi_PNG9204.png":"img/food/sushi_PNG9204.png","./img/food/bacon_PNG10917.png":"img/food/bacon_PNG10917.png","./img/food/bagel_PNG74.png":"img/food/bagel_PNG74.png","./img/people/baby_PNG51737.png":"img/people/baby_PNG51737.png","./img/people/astronaut_PNG47.png":"img/people/astronaut_PNG47.png","./img/people/baby_PNG51764.png":"img/people/baby_PNG51764.png","./img/people/leonardo_dicaprio_PNG43.png":"img/people/leonardo_dicaprio_PNG43.png","./img/people/thinking_woman_PNG11634.png":"img/people/thinking_woman_PNG11634.png","./img/people/dancer_PNG97.png":"img/people/dancer_PNG97.png","./img/people/baby_PNG17912.png":"img/people/baby_PNG17912.png","./img/objects/mountain_PNG30.png":"img/objects/mountain_PNG30.png","./img/objects/alarm_clock_PNG94.png":"img/objects/alarm_clock_PNG94.png","./img/objects/earth_PNG18.png":"img/objects/earth_PNG18.png","./img/objects/mountain_PNG6.png":"img/objects/mountain_PNG6.png","./img/objects/hands_PNG958.png":"img/objects/hands_PNG958.png","./img/objects/finger_PNG6307.png":"img/objects/finger_PNG6307.png","./img/objects/hands_PNG944.png":"img/objects/hands_PNG944.png","./img/objects/phone_hand_PNG91.png":"img/objects/phone_hand_PNG91.png","./style.css":"style.css"}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -66578,7 +66574,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52025" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54201" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

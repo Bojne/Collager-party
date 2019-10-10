@@ -34,7 +34,6 @@ import stuff4 from "./img/objects/mountain_PNG6.png";
 import stuff5 from "./img/objects/hands_PNG958.png";
 import stuff6 from "./img/objects/finger_PNG6307.png";
 import stuff7 from "./img/objects/hands_PNG944.png";
-import bach from "./img/bach.jpg";
 
 import hand from "./img/objects/phone_hand_PNG91.png";
 
@@ -144,7 +143,7 @@ class App extends React.Component {
         
         <p>
           Create by {" "}
-          <a href="https://www.facebook.com/bojne.john">Yueh Han Huang</a>. Btw, give a ⭐️ to my <a href="hhttps://github.com/Bojne/create-collage">GitHub Repo</a> is appreciated 👏.
+          <a href="https://www.facebook.com/bojne.john">Yueh Han Huang</a>. Btw, give a ⭐️ to my <a href="https://github.com/Bojne/Collager-party">GitHub Repo</a> is appreciated 👏.
         </p>
       </div>
       
