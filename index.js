@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { TwitterPicker } from 'react-color';
 import Draggable from "react-draggable";
+import TextField from '@material-ui/core/TextField';
+
+
 import animal1 from "./img/animal/harbor_seal_PNG1.png";
 import animal2 from "./img/animal/shrimps_PNG18277.png";
 import animal3 from "./img/animal/pokemon_PNG110.png";
@@ -44,8 +48,8 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      color: "#ffcbcb",
-      url: "",
+      color: "#F78DA7",
+      url: "https://github.com/Bojne/Collager-party/blob/master/img/bach.jpg?raw=true",
       objects: [
         { emoji: "👇" },
         { emoji: "🗿" },
@@ -90,8 +94,6 @@ class App extends React.Component {
   }
   render() {
     document.body.style.backgroundColor = this.state.color;
-    console.log(this.state.color);
-
     const scale = 0.3;
     const styleScale = {
       width: "100px",
@@ -101,24 +103,25 @@ class App extends React.Component {
 
     return (
       <div>
-        <p>
-          Build by{" "}
-          <a href="https://www.facebook.com/bojne.john">Yueh Han Huang</a>. If
-          you like it, leave a ⭐️ at my <a href="hhttps://github.com/Bojne/create-collage">GitHub Repo</a>, 🙏!
-        </p>
-
+        <div>
+          <p>
+            <TextField
+              label="Image address"
+              helperText="Add your own image via link!"
+               fullWidth
+              onChange={evt => this.updateImage(evt)}
+            />
+          </p>
+        </div>
+        
         <Draggable handle=".handle" onStart={console.log("sup!")}>
           <img
             className="handle bimage"
             src={this.state.url}
-            alt="Add your own link!🔗"
+            alt="Link doesn't seems right!🔗"
           />
         </Draggable>
-        <div>
-          <Draggable handle=".handle" onStart={console.log("sup!")}>
-            <img className="handle bimage" src={bach} alt="Bach!🔗" />
-          </Draggable>
-        </div>
+        
 
         <div>
           {this.state.images.map(obj => {
@@ -131,26 +134,27 @@ class App extends React.Component {
           })}
         </div>
         <div>
-          <p>
-            🎨Customize ur background <a href="https://colorhunt.co/">color </a>
-            here 👉
-            <input
-              value={this.state.color}
-              onChange={evt => this.updateColor(evt)}
-            />
-          </p>
+          <p>Change Background Color: 🎨</p>
         </div>
-        <div>
-          <p>
-            Add a new pic👏:
-            <input
-              value={this.state.url}
-              onChange={evt => this.updateImage(evt)}
-            />
-          </p>
-        </div>
+        <TwitterPicker
+          color={ this.state.color}
+          onChangeComplete={color => this.updateColor(color)}
+           />
+        
+        
+        <p>
+          Create by {" "}
+          <a href="https://www.facebook.com/bojne.john">Yueh Han Huang</a>. Btw, give a ⭐️ to my <a href="hhttps://github.com/Bojne/create-collage">GitHub Repo</a> is appreciated 👏.
+        </p>
       </div>
+      
     );
+  }
+
+  renderInputImage(url){
+    return {
+
+    }
   }
 
   renderEmojiDraggable(emoji) {
@@ -176,7 +180,7 @@ class App extends React.Component {
   }
   updateColor(evt) {
     this.setState({
-      color: evt.target.value
+      color: evt.hex
     });
   }
   updateImage(evt) {
