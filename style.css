@@ -14,6 +14,6 @@ body {
   width: 400px;
 }
 
-p, h1 {
+p, h1, h2 {
   font-family: 'Mansalva', cursive;
 }
