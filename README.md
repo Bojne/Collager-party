@@ -11,12 +11,11 @@ If you are bored with collage objects, reload the page for new surprise!
 
 ### Gallery 
 
-[!Art1](./arts/banner.png)
+![Art1](./arts/banner.png)
 
-[!Art2](./arts/collage01.png)
+![Art2](./arts/collage01.png)
 
-[!Art3](./arts/collage06.png)
-
+![Art3](./arts/back2.png)
 
 ---
 A Hacklodge 2019 project @ Menlo Park, SF. Built by Yueh Han Haung('http://fb.me/bojne.john').  
