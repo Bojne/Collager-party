@@ -35,4 +35,5 @@ p, h1, h2 {
 .emojiBox{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
