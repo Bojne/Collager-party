@@ -3,7 +3,8 @@ body {
 }
 
 .emoji {
-  font-size: 60px;
+  font-size: 100px;
+  margin-left: 10px;
 }
 
 .image {
@@ -16,4 +17,22 @@ body {
 
 p, h1, h2 {
   font-family: 'Mansalva', cursive;
+}
+
+.react-draggable, .cursor {
+  cursor: move;
+}
+.no-cursor {
+  cursor: auto;
+}
+.cursor-y {
+  cursor: ns-resize;
+}
+.cursor-x {
+  cursor: ew-resize;
+}
+
+.emojiBox{
+  display: flex;
+  flex-wrap: wrap;
 }

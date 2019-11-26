@@ -48436,7 +48436,9 @@ var _chainPropTypes = _interopRequireDefault(require("./chainPropTypes"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function isClassComponent(elementType) {
   // elementType.prototype?.isReactComponent
@@ -53269,7 +53271,9 @@ Object.keys(_StylesProvider).forEach(function (key) {
   });
 });
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 },{"./StylesProvider":"node_modules/@material-ui/styles/esm/StylesProvider/StylesProvider.js"}],"node_modules/@material-ui/styles/esm/makeStyles/indexCounter.js":[function(require,module,exports) {
 "use strict";
 
@@ -54628,7 +54632,9 @@ Object.keys(_withTheme).forEach(function (key) {
   });
 });
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 },{"./withTheme":"node_modules/@material-ui/styles/esm/withTheme/withTheme.js"}],"node_modules/@material-ui/styles/esm/index.js":[function(require,module,exports) {
 "use strict";
 
@@ -54748,7 +54754,9 @@ var _withStyles = _interopRequireDefault(require("./withStyles"));
 
 var _withTheme = _interopRequireWildcard(require("./withTheme"));
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -56504,7 +56512,9 @@ var _TextareaAutosize = _interopRequireDefault(require("../TextareaAutosize"));
 
 var _utils2 = require("./utils");
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -60258,7 +60268,9 @@ var _TrapFocus = _interopRequireDefault(require("./TrapFocus"));
 
 var _SimpleBackdrop = _interopRequireDefault(require("./SimpleBackdrop"));
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -66136,63 +66148,7 @@ Object.defineProperty(exports, "default", {
 var _TextField = _interopRequireDefault(require("./TextField"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./TextField":"node_modules/@material-ui/core/esm/TextField/TextField.js"}],"img/animal/harbor_seal_PNG1.png":[function(require,module,exports) {
-module.exports = "/harbor_seal_PNG1.d6360be5.png";
-},{}],"img/animal/shrimps_PNG18277.png":[function(require,module,exports) {
-module.exports = "/shrimps_PNG18277.6fd18bef.png";
-},{}],"img/animal/pokemon_PNG110.png":[function(require,module,exports) {
-module.exports = "/pokemon_PNG110.d678c112.png";
-},{}],"img/animal/shark_PNG18811.png":[function(require,module,exports) {
-module.exports = "/shark_PNG18811.bd538253.png";
-},{}],"img/animal/giraffe_PNG13518.png":[function(require,module,exports) {
-module.exports = "/giraffe_PNG13518.cf76e6f8.png";
-},{}],"img/animal/—Pngtree—black and white cow_3477228.png":[function(require,module,exports) {
-module.exports = "/—Pngtree—black and white cow_3477228.76e73d67.png";
-},{}],"img/food/fried_egg_PNG79.png":[function(require,module,exports) {
-module.exports = "/fried_egg_PNG79.c6db5ac1.png";
-},{}],"img/food/bean.png":[function(require,module,exports) {
-module.exports = "/bean.66af0e96.png";
-},{}],"img/food/lime_PNG52.png":[function(require,module,exports) {
-module.exports = "/lime_PNG52.68ed342c.png";
-},{}],"img/food/cauliflower_PNG12673.png":[function(require,module,exports) {
-module.exports = "/cauliflower_PNG12673.30b2d067.png";
-},{}],"img/food/sushi_PNG9204.png":[function(require,module,exports) {
-module.exports = "/sushi_PNG9204.c1ade36e.png";
-},{}],"img/food/bacon_PNG10917.png":[function(require,module,exports) {
-module.exports = "/bacon_PNG10917.78a2c972.png";
-},{}],"img/food/bagel_PNG74.png":[function(require,module,exports) {
-module.exports = "/bagel_PNG74.b6459a19.png";
-},{}],"img/people/baby_PNG51737.png":[function(require,module,exports) {
-module.exports = "/baby_PNG51737.1316362f.png";
-},{}],"img/people/astronaut_PNG47.png":[function(require,module,exports) {
-module.exports = "/astronaut_PNG47.fd25651a.png";
-},{}],"img/people/baby_PNG51764.png":[function(require,module,exports) {
-module.exports = "/baby_PNG51764.5c25753e.png";
-},{}],"img/people/leonardo_dicaprio_PNG43.png":[function(require,module,exports) {
-module.exports = "/leonardo_dicaprio_PNG43.98168a78.png";
-},{}],"img/people/thinking_woman_PNG11634.png":[function(require,module,exports) {
-module.exports = "/thinking_woman_PNG11634.0fd9919a.png";
-},{}],"img/people/dancer_PNG97.png":[function(require,module,exports) {
-module.exports = "/dancer_PNG97.55d090ad.png";
-},{}],"img/people/baby_PNG17912.png":[function(require,module,exports) {
-module.exports = "/baby_PNG17912.f7bac75a.png";
-},{}],"img/objects/mountain_PNG30.png":[function(require,module,exports) {
-module.exports = "/mountain_PNG30.361e7551.png";
-},{}],"img/objects/alarm_clock_PNG94.png":[function(require,module,exports) {
-module.exports = "/alarm_clock_PNG94.987e36f6.png";
-},{}],"img/objects/earth_PNG18.png":[function(require,module,exports) {
-module.exports = "/earth_PNG18.b15af8a9.png";
-},{}],"img/objects/mountain_PNG6.png":[function(require,module,exports) {
-module.exports = "/mountain_PNG6.c826acf6.png";
-},{}],"img/objects/hands_PNG958.png":[function(require,module,exports) {
-module.exports = "/hands_PNG958.e813aa6b.png";
-},{}],"img/objects/finger_PNG6307.png":[function(require,module,exports) {
-module.exports = "/finger_PNG6307.e697ef2a.png";
-},{}],"img/objects/hands_PNG944.png":[function(require,module,exports) {
-module.exports = "/hands_PNG944.5c66134b.png";
-},{}],"img/objects/phone_hand_PNG91.png":[function(require,module,exports) {
-module.exports = "/phone_hand_PNG91.3115efdf.png";
-},{}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"./TextField":"node_modules/@material-ui/core/esm/TextField/TextField.js"}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -66264,7 +66220,99 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"_css_loader":"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"emoji.json":[function(require,module,exports) {
+module.exports = {
+  "objects": [{
+    "emoji": "\u2728"
+  }, {
+    "emoji": "🍤"
+  }, {
+    "emoji": "💡"
+  }, {
+    "emoji": "🥦"
+  }, {
+    "emoji": "🙊"
+  }, {
+    "emoji": "🙉"
+  }, {
+    "emoji": "🙈"
+  }, {
+    "emoji": "💎"
+  }, {
+    "emoji": "💊"
+  }, {
+    "emoji": "🗽"
+  }, {
+    "emoji": "🚨"
+  }, {
+    "emoji": "🍣"
+  }, {
+    "emoji": "🥯"
+  }, {
+    "emoji": "🥓"
+  }, {
+    "emoji": "🥝"
+  }, {
+    "emoji": "🍋"
+  }, {
+    "emoji": "🍇"
+  }]
+};
+},{}],"img/animal/harbor_seal_PNG1.png":[function(require,module,exports) {
+module.exports = "/harbor_seal_PNG1.d6360be5.png";
+},{}],"img/animal/shrimps_PNG18277.png":[function(require,module,exports) {
+module.exports = "/shrimps_PNG18277.6fd18bef.png";
+},{}],"img/animal/birds_PNG44.png":[function(require,module,exports) {
+module.exports = "/birds_PNG44.2aceeb59.png";
+},{}],"img/animal/shark_PNG18811.png":[function(require,module,exports) {
+module.exports = "/shark_PNG18811.bd538253.png";
+},{}],"img/animal/giraffe_PNG13518.png":[function(require,module,exports) {
+module.exports = "/giraffe_PNG13518.cf76e6f8.png";
+},{}],"img/food/fried_egg_PNG79.png":[function(require,module,exports) {
+module.exports = "/fried_egg_PNG79.c6db5ac1.png";
+},{}],"img/food/bean.png":[function(require,module,exports) {
+module.exports = "/bean.66af0e96.png";
+},{}],"img/food/lime_PNG52.png":[function(require,module,exports) {
+module.exports = "/lime_PNG52.68ed342c.png";
+},{}],"img/food/cauliflower_PNG12673.png":[function(require,module,exports) {
+module.exports = "/cauliflower_PNG12673.30b2d067.png";
+},{}],"img/food/sushi_PNG9204.png":[function(require,module,exports) {
+module.exports = "/sushi_PNG9204.c1ade36e.png";
+},{}],"img/food/bacon_PNG10917.png":[function(require,module,exports) {
+module.exports = "/bacon_PNG10917.78a2c972.png";
+},{}],"img/food/bagel_PNG74.png":[function(require,module,exports) {
+module.exports = "/bagel_PNG74.b6459a19.png";
+},{}],"img/people/baby_PNG51737.png":[function(require,module,exports) {
+module.exports = "/baby_PNG51737.1316362f.png";
+},{}],"img/people/astronaut_PNG47.png":[function(require,module,exports) {
+module.exports = "/astronaut_PNG47.fd25651a.png";
+},{}],"img/people/baby_PNG51764.png":[function(require,module,exports) {
+module.exports = "/baby_PNG51764.5c25753e.png";
+},{}],"img/people/leonardo_dicaprio_PNG43.png":[function(require,module,exports) {
+module.exports = "/leonardo_dicaprio_PNG43.98168a78.png";
+},{}],"img/people/thinking_woman_PNG11634.png":[function(require,module,exports) {
+module.exports = "/thinking_woman_PNG11634.0fd9919a.png";
+},{}],"img/people/dancer_PNG97.png":[function(require,module,exports) {
+module.exports = "/dancer_PNG97.55d090ad.png";
+},{}],"img/people/baby_PNG17912.png":[function(require,module,exports) {
+module.exports = "/baby_PNG17912.f7bac75a.png";
+},{}],"img/objects/mountain_PNG30.png":[function(require,module,exports) {
+module.exports = "/mountain_PNG30.361e7551.png";
+},{}],"img/objects/alarm_clock_PNG94.png":[function(require,module,exports) {
+module.exports = "/alarm_clock_PNG94.987e36f6.png";
+},{}],"img/objects/earth_PNG18.png":[function(require,module,exports) {
+module.exports = "/earth_PNG18.b15af8a9.png";
+},{}],"img/objects/mountain_PNG6.png":[function(require,module,exports) {
+module.exports = "/mountain_PNG6.c826acf6.png";
+},{}],"img/objects/hands_PNG958.png":[function(require,module,exports) {
+module.exports = "/hands_PNG958.e813aa6b.png";
+},{}],"img/objects/finger_PNG6307.png":[function(require,module,exports) {
+module.exports = "/finger_PNG6307.e697ef2a.png";
+},{}],"img/objects/hands_PNG944.png":[function(require,module,exports) {
+module.exports = "/hands_PNG944.5c66134b.png";
+},{}],"img/objects/phone_hand_PNG91.png":[function(require,module,exports) {
+module.exports = "/phone_hand_PNG91.3115efdf.png";
+},{}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -66277,17 +66325,19 @@ var _reactDraggable = _interopRequireDefault(require("react-draggable"));
 
 var _TextField = _interopRequireDefault(require("@material-ui/core/TextField"));
 
+require("./style.css");
+
+var _emoji = _interopRequireDefault(require("./emoji"));
+
 var _harbor_seal_PNG = _interopRequireDefault(require("./img/animal/harbor_seal_PNG1.png"));
 
 var _shrimps_PNG = _interopRequireDefault(require("./img/animal/shrimps_PNG18277.png"));
 
-var _pokemon_PNG = _interopRequireDefault(require("./img/animal/pokemon_PNG110.png"));
+var _birds_PNG = _interopRequireDefault(require("./img/animal/birds_PNG44.png"));
 
 var _shark_PNG = _interopRequireDefault(require("./img/animal/shark_PNG18811.png"));
 
 var _giraffe_PNG = _interopRequireDefault(require("./img/animal/giraffe_PNG13518.png"));
-
-var _PngtreeBlackAndWhiteCow_ = _interopRequireDefault(require("./img/animal/\u2014Pngtree\u2014black and white cow_3477228.png"));
 
 var _fried_egg_PNG = _interopRequireDefault(require("./img/food/fried_egg_PNG79.png"));
 
@@ -66333,8 +66383,6 @@ var _hands_PNG2 = _interopRequireDefault(require("./img/objects/hands_PNG944.png
 
 var _phone_hand_PNG = _interopRequireDefault(require("./img/objects/phone_hand_PNG91.png"));
 
-require("./style.css");
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -66357,7 +66405,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-console.log("Can you hear me?");
+var emojiList = _emoji.default.objects;
 var destination = document.getElementById("root");
 
 var App =
@@ -66373,20 +66421,7 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this, props));
     _this.state = {
       color: "#F78DA7",
-      url: "https://github.com/Bojne/Collager-party/blob/master/img/bach.jpg?raw=true",
-      objects: [{
-        emoji: "👇"
-      }, {
-        emoji: "🗿"
-      }, {
-        emoji: "🍤"
-      }, {
-        emoji: "💡"
-      }, {
-        emoji: "🥦"
-      }, {
-        emoji: "🚀"
-      }],
+      url: "https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzMyNjY1ODY5/wolfgang-mozart-9417115-2-402.jpg",
       images: [{
         ig: _fried_egg_PNG.default
       }, {
@@ -66408,13 +66443,11 @@ function (_React$Component) {
       }, {
         ig: _shrimps_PNG.default
       }, {
-        ig: _pokemon_PNG.default
+        ig: _birds_PNG.default
       }, {
         ig: _shark_PNG.default
       }, {
         ig: _giraffe_PNG.default
-      }, {
-        ig: _PngtreeBlackAndWhiteCow_.default
       }, {
         ig: _baby_PNG.default
       }, {
@@ -66472,15 +66505,19 @@ function (_React$Component) {
           return _this2.updateImage(evt);
         }
       }))), _react.default.createElement(_reactDraggable.default, {
-        handle: ".handle",
-        onStart: console.log("sup!")
+        handle: ".handle"
       }, _react.default.createElement("img", {
         className: "handle bimage",
         src: this.state.url,
         alt: "Link doesn't seems right!\uD83D\uDD17"
       })), _react.default.createElement("div", null, this.state.images.map(function (obj) {
         return _this2.renderImgDraggable(obj.ig);
-      })), _react.default.createElement("div", null, this.state.objects.map(function (obj) {
+      })), _react.default.createElement("div", {
+        className: "emojiBox",
+        div: true
+      }, emojiList.filter(function (item) {
+        return Math.random() > 0.7;
+      }).map(function (obj) {
         return _this2.renderEmojiDraggable(obj.emoji);
       })), _react.default.createElement("div", null, _react.default.createElement("p", null, "Change Background Color: \uD83C\uDFA8")), _react.default.createElement(_reactColor.TwitterPicker, {
         color: this.state.color,
@@ -66488,15 +66525,15 @@ function (_React$Component) {
           return _this2.updateColor(color);
         }
       }), _react.default.createElement("p", null, "Create by ", " ", _react.default.createElement("a", {
-        href: "https://www.facebook.com/bojne.john"
-      }, "Yueh Han Huang"), ". Btw, give a \u2B50\uFE0F to my ", _react.default.createElement("a", {
-        href: "https://github.com/Bojne/Collager-party"
+        href: "http://bojne.com/",
+        target: "_blank"
+      }, "Yueh Han Huang"), " at ", _react.default.createElement("a", {
+        href: "https://hacklodge.org/",
+        target: "_blank"
+      }, "Hacklodge(S19)"), ". If you lile this, give a \u2B50\uFE0F to my ", _react.default.createElement("a", {
+        href: "https://github.com/Bojne/Collager-party",
+        target: "_blank"
       }, "GitHub Repo"), " is appreciated \uD83D\uDC4F."));
-    }
-  }, {
-    key: "renderInputImage",
-    value: function renderInputImage(url) {
-      return {};
     }
   }, {
     key: "renderEmojiDraggable",
@@ -66518,8 +66555,7 @@ function (_React$Component) {
         onStop: this.onStop
       };
       return _react.default.createElement(_reactDraggable.default, _extends({
-        handle: ".handle",
-        onStart: console.log("sup!")
+        handle: ".handle"
       }, dragHandlers), _react.default.createElement("img", {
         className: "handle image",
         src: ig,
@@ -66546,7 +66582,7 @@ function (_React$Component) {
 }(_react.default.Component);
 
 _reactDom.default.render(_react.default.createElement(App, null), destination);
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","react-color":"node_modules/react-color/lib/index.js","react-draggable":"node_modules/react-draggable/dist/react-draggable.js","@material-ui/core/TextField":"node_modules/@material-ui/core/esm/TextField/index.js","./img/animal/harbor_seal_PNG1.png":"img/animal/harbor_seal_PNG1.png","./img/animal/shrimps_PNG18277.png":"img/animal/shrimps_PNG18277.png","./img/animal/pokemon_PNG110.png":"img/animal/pokemon_PNG110.png","./img/animal/shark_PNG18811.png":"img/animal/shark_PNG18811.png","./img/animal/giraffe_PNG13518.png":"img/animal/giraffe_PNG13518.png","./img/animal/—Pngtree—black and white cow_3477228.png":"img/animal/—Pngtree—black and white cow_3477228.png","./img/food/fried_egg_PNG79.png":"img/food/fried_egg_PNG79.png","./img/food/bean.png":"img/food/bean.png","./img/food/lime_PNG52.png":"img/food/lime_PNG52.png","./img/food/cauliflower_PNG12673.png":"img/food/cauliflower_PNG12673.png","./img/food/sushi_PNG9204.png":"img/food/sushi_PNG9204.png","./img/food/bacon_PNG10917.png":"img/food/bacon_PNG10917.png","./img/food/bagel_PNG74.png":"img/food/bagel_PNG74.png","./img/people/baby_PNG51737.png":"img/people/baby_PNG51737.png","./img/people/astronaut_PNG47.png":"img/people/astronaut_PNG47.png","./img/people/baby_PNG51764.png":"img/people/baby_PNG51764.png","./img/people/leonardo_dicaprio_PNG43.png":"img/people/leonardo_dicaprio_PNG43.png","./img/people/thinking_woman_PNG11634.png":"img/people/thinking_woman_PNG11634.png","./img/people/dancer_PNG97.png":"img/people/dancer_PNG97.png","./img/people/baby_PNG17912.png":"img/people/baby_PNG17912.png","./img/objects/mountain_PNG30.png":"img/objects/mountain_PNG30.png","./img/objects/alarm_clock_PNG94.png":"img/objects/alarm_clock_PNG94.png","./img/objects/earth_PNG18.png":"img/objects/earth_PNG18.png","./img/objects/mountain_PNG6.png":"img/objects/mountain_PNG6.png","./img/objects/hands_PNG958.png":"img/objects/hands_PNG958.png","./img/objects/finger_PNG6307.png":"img/objects/finger_PNG6307.png","./img/objects/hands_PNG944.png":"img/objects/hands_PNG944.png","./img/objects/phone_hand_PNG91.png":"img/objects/phone_hand_PNG91.png","./style.css":"style.css"}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","react-color":"node_modules/react-color/lib/index.js","react-draggable":"node_modules/react-draggable/dist/react-draggable.js","@material-ui/core/TextField":"node_modules/@material-ui/core/esm/TextField/index.js","./style.css":"style.css","./emoji":"emoji.json","./img/animal/harbor_seal_PNG1.png":"img/animal/harbor_seal_PNG1.png","./img/animal/shrimps_PNG18277.png":"img/animal/shrimps_PNG18277.png","./img/animal/birds_PNG44.png":"img/animal/birds_PNG44.png","./img/animal/shark_PNG18811.png":"img/animal/shark_PNG18811.png","./img/animal/giraffe_PNG13518.png":"img/animal/giraffe_PNG13518.png","./img/food/fried_egg_PNG79.png":"img/food/fried_egg_PNG79.png","./img/food/bean.png":"img/food/bean.png","./img/food/lime_PNG52.png":"img/food/lime_PNG52.png","./img/food/cauliflower_PNG12673.png":"img/food/cauliflower_PNG12673.png","./img/food/sushi_PNG9204.png":"img/food/sushi_PNG9204.png","./img/food/bacon_PNG10917.png":"img/food/bacon_PNG10917.png","./img/food/bagel_PNG74.png":"img/food/bagel_PNG74.png","./img/people/baby_PNG51737.png":"img/people/baby_PNG51737.png","./img/people/astronaut_PNG47.png":"img/people/astronaut_PNG47.png","./img/people/baby_PNG51764.png":"img/people/baby_PNG51764.png","./img/people/leonardo_dicaprio_PNG43.png":"img/people/leonardo_dicaprio_PNG43.png","./img/people/thinking_woman_PNG11634.png":"img/people/thinking_woman_PNG11634.png","./img/people/dancer_PNG97.png":"img/people/dancer_PNG97.png","./img/people/baby_PNG17912.png":"img/people/baby_PNG17912.png","./img/objects/mountain_PNG30.png":"img/objects/mountain_PNG30.png","./img/objects/alarm_clock_PNG94.png":"img/objects/alarm_clock_PNG94.png","./img/objects/earth_PNG18.png":"img/objects/earth_PNG18.png","./img/objects/mountain_PNG6.png":"img/objects/mountain_PNG6.png","./img/objects/hands_PNG958.png":"img/objects/hands_PNG958.png","./img/objects/finger_PNG6307.png":"img/objects/finger_PNG6307.png","./img/objects/hands_PNG944.png":"img/objects/hands_PNG944.png","./img/objects/phone_hand_PNG91.png":"img/objects/phone_hand_PNG91.png"}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -66574,7 +66610,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54201" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59540" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -66605,8 +66641,9 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
         assetsToAccept.forEach(function (v) {
           hmrAcceptRun(v[0], v[1]);
         });
-      } else {
-        window.location.reload();
+      } else if (location.reload) {
+        // `location` global exists in a web worker context but lacks `.reload()` function.
+        location.reload();
       }
     }
 

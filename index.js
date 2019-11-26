@@ -3,15 +3,15 @@ import ReactDOM from "react-dom";
 import { TwitterPicker } from 'react-color';
 import Draggable from "react-draggable";
 import TextField from '@material-ui/core/TextField';
-
+import "./style.css";
+import emojiData from './emoji'
+const emojiList =  emojiData.objects
 
 import animal1 from "./img/animal/harbor_seal_PNG1.png";
 import animal2 from "./img/animal/shrimps_PNG18277.png";
-import animal3 from "./img/animal/pokemon_PNG110.png";
+import animal3 from "./img/animal/birds_PNG44.png";
 import animal4 from "./img/animal/shark_PNG18811.png";
 import animal5 from "./img/animal/giraffe_PNG13518.png";
-import animal6 from "./img/animal/—Pngtree—black and white cow_3477228.png";
-
 import food1 from "./img/food/fried_egg_PNG79.png";
 import food2 from "./img/food/bean.png";
 import food3 from "./img/food/lime_PNG52.png";
@@ -34,12 +34,10 @@ import stuff4 from "./img/objects/mountain_PNG6.png";
 import stuff5 from "./img/objects/hands_PNG958.png";
 import stuff6 from "./img/objects/finger_PNG6307.png";
 import stuff7 from "./img/objects/hands_PNG944.png";
-
 import hand from "./img/objects/phone_hand_PNG91.png";
 
-import "./style.css";
 
-console.log("Can you hear me?");
+
 
 const destination = document.getElementById("root");
 
@@ -48,15 +46,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       color: "#F78DA7",
-      url: "https://github.com/Bojne/Collager-party/blob/master/img/bach.jpg?raw=true",
-      objects: [
-        { emoji: "👇" },
-        { emoji: "🗿" },
-        { emoji: "🍤" },
-        { emoji: "💡" },
-        { emoji: "🥦" },
-        { emoji: "🚀" }
-      ],
+      url: "https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzMyNjY1ODY5/wolfgang-mozart-9417115-2-402.jpg",
       images: [
         { ig: food1 },
         { ig: food2 },
@@ -71,7 +61,6 @@ class App extends React.Component {
         { ig: animal3 },
         { ig: animal4 },
         { ig: animal5 },
-        { ig: animal6 },
         { ig: people1 },
         { ig: people2 },
         { ig: people3 },
@@ -113,7 +102,7 @@ class App extends React.Component {
           </p>
         </div>
         
-        <Draggable handle=".handle" onStart={console.log("sup!")}>
+        <Draggable handle=".handle">
           <img
             className="handle bimage"
             src={this.state.url}
@@ -127,11 +116,12 @@ class App extends React.Component {
             return this.renderImgDraggable(obj.ig);
           })}
         </div>
-        <div>
-          {this.state.objects.map(obj => {
+        <div className = 'emojiBox' div>
+          {emojiList.filter(item => Math.random() > 0.7).map(obj => {
             return this.renderEmojiDraggable(obj.emoji);
           })}
         </div>
+        
         <div>
           <p>Change Background Color: 🎨</p>
         </div>
@@ -139,26 +129,18 @@ class App extends React.Component {
           color={ this.state.color}
           onChangeComplete={color => this.updateColor(color)}
            />
-        
-        
         <p>
           Create by {" "}
-          <a href="https://www.facebook.com/bojne.john">Yueh Han Huang</a>. Btw, give a ⭐️ to my <a href="https://github.com/Bojne/Collager-party">GitHub Repo</a> is appreciated 👏.
+          <a href="http://bojne.com/" target="_blank">Yueh Han Huang</a> at <a href="https://hacklodge.org/" target="_blank">Hacklodge(S19)</a>. 
+          If you lile this, give a ⭐️ to my <a href="https://github.com/Bojne/Collager-party" target="_blank">GitHub Repo</a> is appreciated 👏.
         </p>
       </div>
       
     );
   }
 
-  renderInputImage(url){
-    return {
-
-    }
-  }
-
   renderEmojiDraggable(emoji) {
     const dragHandlers = { onStart: this.onStart, onStop: this.onStop };
-
     return (
       <Draggable handle=".handle" {...dragHandlers}>
         <div className="handle emoji">{emoji}</div>
@@ -170,7 +152,6 @@ class App extends React.Component {
     return (
       <Draggable
         handle=".handle"
-        onStart={console.log("sup!")}
         {...dragHandlers}
       >
         <img className="handle image" src={ig} alt="img not here" />
