@@ -2,7 +2,7 @@
 
 ![Art Top](./arts/collage04.png)
 
-Do your own intereative creativity experiment on [the web](collager.party). 
+Do your own intereative creativity experiment on [the web](http://makecollage.netlify.app/). 
 
 You can instantly make a unique collage art by moveing things around, add your own image, changing the background colors. 
 
