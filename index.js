@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { TwitterPicker } from 'react-color';
+import { Resizable } from "re-resizable";
 import Draggable from "react-draggable";
 import TextField from '@material-ui/core/TextField';
 import "./style.css";
@@ -109,9 +110,9 @@ class App extends React.Component {
             alt="Link doesn't seems right!🔗"
             />
         </Draggable>
-        
 
-        <div>
+
+        <div className="imageBox">
           {this.state.images.map(obj => {
             return this.renderImgDraggable(obj.ig);
           })}
@@ -147,15 +148,23 @@ class App extends React.Component {
       </Draggable>
     );
   }
-  renderImgDraggable(ig) {
+  renderImgDraggable(image_url) {
     const dragHandlers = { onStop: this.onStop };
     return (
-      <Draggable
-        handle=".handle"
-        {...dragHandlers}
-      >
-        <img className="handle image" src={ig} alt="img not here" />
-      </Draggable>
+      <Draggable>
+          <Resizable
+            defaultSize={{
+              width: 150,
+              height: 150,
+            }}
+            style={{
+              background: `url(${image_url})`,
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+            }}
+            lockAspectRatio={true}
+          ></Resizable>
+        </Draggable>
     );
   }
   updateColor(evt) {
