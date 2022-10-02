@@ -1,1 +1,0 @@
-{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA,OACI,cACJ,CAEA,OACI,sBACJ","file":"create-collage.aca134f1.css","sourceRoot":"..","sourcesContent":[".emoji {\n    font-size: 60px;\n}\n\n.image {\n    border: 2px solid green;\n}\n"]}
