@@ -45,7 +45,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      color: "#F78DA7",
+      color: "#F9F9F9",
       url: "https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzMyNjY1ODY5/wolfgang-mozart-9417115-2-402.jpg",
       images: [
         { ig: food1 },
@@ -107,7 +107,7 @@ class App extends React.Component {
             className="handle bimage"
             src={this.state.url}
             alt="Link doesn't seems right!🔗"
-          />
+            />
         </Draggable>
         
 
