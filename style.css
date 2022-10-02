@@ -24,6 +24,7 @@ p, h1, h2 {
 }
 
 .react-draggable, .cursor {
+  /* border: 4px dotted blue; */
   cursor: move;
   cursor: grab;
   cursor: -moz-grab;
@@ -31,6 +32,7 @@ p, h1, h2 {
 }
 
 .react-draggable:active {
+  /* border: 4px solid blue; */
   cursor: grabbing;
   cursor: -moz-grabbing;
   cursor: -webkit-grabbing;
@@ -46,7 +48,7 @@ p, h1, h2 {
   cursor: ew-resize;
 }
 
-.emojiBox{
+.emojiBox, .imageBox{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
