@@ -32,7 +32,7 @@ p, h1, h2 {
 }
 
 .react-draggable:active {
-  /* border: 4px solid blue; */
+  border: 1px solid grey;
   cursor: grabbing;
   cursor: -moz-grabbing;
   cursor: -webkit-grabbing;
@@ -50,6 +50,4 @@ p, h1, h2 {
 
 .emojiBox, .imageBox{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
 }

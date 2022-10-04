@@ -2,7 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { TwitterPicker } from 'react-color';
 import { Resizable } from "re-resizable";
+import styled from "styled-components";
 import Draggable from "react-draggable";
+// import DraggableObject from "./draggable";
 import TextField from '@material-ui/core/TextField';
 import "./style.css";
 import emojiData from './emoji'
@@ -37,17 +39,72 @@ import stuff6 from "./img/objects/finger_PNG6307.png";
 import stuff7 from "./img/objects/hands_PNG944.png";
 import hand from "./img/objects/phone_hand_PNG91.png";
 
+const Container = styled.div`
+  width: 100%;
+  margin-top: 2rem;
+`;
 
 
-
+const beethovenImg = "https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzMyNjY1ODY5/wolfgang-mozart-9417115-2-402.jpg"
 const destination = document.getElementById("root");
+
+const DraggableObject = ({imageUrl=beethovenImg, text}) => {
+  console.log({imageUrl})
+
+  const FontSize = text ? "15 px":"100 px"
+  imageUrl = text ? "" : imageUrl
+  return <Draggable>
+        <Resizable
+          defaultSize={{
+            width: 250,
+            height: 250,
+          }}
+          style={{
+            background: `url(${imageUrl})`,
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
+            // font-size: `${FontSize}`,
+          }}
+          lockAspectRatio={true}
+        >{text}</Resizable>
+  </Draggable>
+}
+
+const EmojiDraggable = ({emoji}) => {
+  return (
+    <Draggable >
+      <div className="handle emoji">{emoji}</div>
+    </Draggable>
+  );
+}
+
+
+const Canvas = () => {
+  return <Container>
+      <div className = 'emojiBox' div>
+          {emojiList.filter(item => Math.random() > 0.7).map(obj => {
+            return <EmojiDraggable emoji={obj.emoji}></EmojiDraggable>
+          })}
+      </div>
+  </Container>
+}
+
+
+
+const Footer = () => {
+  return  <p>
+  Create by {" "}
+  <a href="http://bojne.com/" target="_blank">Yueh Han Huang</a> at <a href="https://hacklodge.org/" target="_blank">Hacklodge(S19)</a>. 
+  If you lile this, give a ⭐️ to my <a href="https://github.com/Bojne/Collager-party" target="_blank">GitHub Repo</a> is appreciated 👏.
+</p>
+}
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       color: "#F9F9F9",
-      url: "https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzMyNjY1ODY5/wolfgang-mozart-9417115-2-402.jpg",
+      url: beethovenImg,
       images: [
         { ig: food1 },
         { ig: food2 },
@@ -76,7 +133,6 @@ class App extends React.Component {
         { ig: stuff5 },
         { ig: stuff6 },
         { ig: stuff7 },
-
         { ig: hand }
       ].filter(item => Math.random() > 0.81)
     };
@@ -102,27 +158,15 @@ class App extends React.Component {
             />
           </p>
         </div>
-        
-        <Draggable handle=".handle">
-          <img
-            className="handle bimage"
-            src={this.state.url}
-            alt="Link doesn't seems right!🔗"
-            />
-        </Draggable>
-
-
+        <DraggableObject imageUrl={this.state.url}></DraggableObject>
         <div className="imageBox">
           {this.state.images.map(obj => {
+            // return <DraggableObject imageUrl={obj.ig}></DraggableObject> 
+            // #TODO: Make component render here
             return this.renderImgDraggable(obj.ig);
           })}
         </div>
-        <div className = 'emojiBox' div>
-          {emojiList.filter(item => Math.random() > 0.7).map(obj => {
-            return this.renderEmojiDraggable(obj.emoji);
-          })}
-        </div>
-        
+        <Canvas></Canvas>
         <div>
           <p>Change Background Color: 🎨</p>
         </div>
@@ -130,27 +174,17 @@ class App extends React.Component {
           color={ this.state.color}
           onChangeComplete={color => this.updateColor(color)}
            />
-        <p>
-          Create by {" "}
-          <a href="http://bojne.com/" target="_blank">Yueh Han Huang</a> at <a href="https://hacklodge.org/" target="_blank">Hacklodge(S19)</a>. 
-          If you lile this, give a ⭐️ to my <a href="https://github.com/Bojne/Collager-party" target="_blank">GitHub Repo</a> is appreciated 👏.
-        </p>
+       <Footer></Footer>
       </div>
       
     );
   }
 
-  renderEmojiDraggable(emoji) {
-    const dragHandlers = { onStart: this.onStart, onStop: this.onStop };
-    return (
-      <Draggable handle=".handle" {...dragHandlers}>
-        <div className="handle emoji">{emoji}</div>
-      </Draggable>
-    );
-  }
+
   renderImgDraggable(image_url) {
-    const dragHandlers = { onStop: this.onStop };
     return (
+      // #TODO: Make component render the right path 
+      // <DraggableObject imageUrl={image_url}></DraggableObject>
       <Draggable>
           <Resizable
             defaultSize={{
@@ -180,3 +214,5 @@ class App extends React.Component {
 }
 
 ReactDOM.render(<App />, destination);
+
+
