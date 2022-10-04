@@ -57,7 +57,7 @@ const DraggableObject = ({imageUrl=beethovenImg, text}) => {
         <Resizable
           defaultSize={{
               width:320,
-              height:32c0,
+              height:320,
             }}
           style={{
             background: `url(${imageUrl})`,
