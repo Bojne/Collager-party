@@ -56,9 +56,9 @@ const DraggableObject = ({imageUrl=beethovenImg, text}) => {
   return <Draggable>
         <Resizable
           defaultSize={{
-            width: 250,
-            height: 250,
-          }}
+              width:320,
+              height:32c0,
+            }}
           style={{
             background: `url(${imageUrl})`,
             backgroundSize: "contain",
