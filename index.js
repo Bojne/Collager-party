@@ -126,7 +126,6 @@ const App = () => {
           .map((obj) => {
             return <EmojiDraggable emoji={obj.emoji}></EmojiDraggable>;
           })}
-
         {images.map((obj, i) => {
           return <DraggableObject imageUrl={obj.ig} key={i}></DraggableObject>;
         })}
