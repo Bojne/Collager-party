@@ -26,6 +26,42 @@ import stuff5 from "./img/objects/hands_PNG958.png";
 import stuff6 from "./img/objects/finger_PNG6307.png";
 import stuff7 from "./img/objects/hands_PNG944.png";
 import hand from "./img/objects/phone_hand_PNG91.png";
-import Draggable from "react-draggable";
 
+export {
+  animal1,
+  animal2,
+  animal3,
+  animal4,
+  animal5,
+  food1,
+  food2,
+  food3,
+  food4,
+  food5,
+  food6,
+  food7,
+  food8,
+  people1,
+  people2,
+  people3,
+  people4,
+  people5,
+  people6,
+  people7,
+  stuff1,
+  stuff2,
+  stuff3,
+  stuff4,
+  stuff5,
+  stuff6,
+  stuff7,
+  hand,
+};
 
+const Images = {
+  food1: require("./favocon.png").default,
+  food2: require("./img/food/bean.png").default,
+  food3: require("./img/food/lime_PNG52.png").default,
+};
+
+export default Images;

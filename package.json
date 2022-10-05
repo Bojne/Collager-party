@@ -10,7 +10,12 @@
     "build": "parcel build index.html --public-url ./ --no-minify"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@mantine/core": "^5.5.2",
+    "@mantine/hooks": "^5.5.2",
     "@material-ui/core": "^4.5.0",
+    "element": "^0.1.4",
+    "element.js": "^1.2.0",
     "html-to-image": "^1.10.8",
     "re-resizable": "^6.9.9",
     "react": "^16.0.0",

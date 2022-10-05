@@ -1,14 +1,13 @@
-import React from "react";
+import React, { useState, useRef, useCallback } from "react";
 import ReactDOM from "react-dom";
-import { TwitterPicker } from 'react-color';
-import { Resizable } from "re-resizable";
 import styled from "styled-components";
-import Draggable from "react-draggable";
-// import DraggableObject from "./draggable";
-import TextField from '@material-ui/core/TextField';
 import "./style.css";
-import emojiData from './emoji'
-const emojiList =  emojiData.objects
+import config from "./config";
+import Footer from "./footer";
+import { toJpeg } from "html-to-image";
+import { Button, TextInput, ColorInput } from "@mantine/core";
+import { DraggableObject, EmojiDraggable } from "./customDrag";
+import { Resizable } from "re-resizable";
 
 import animal1 from "./img/animal/harbor_seal_PNG1.png";
 import animal2 from "./img/animal/shrimps_PNG18277.png";
@@ -40,179 +39,106 @@ import stuff7 from "./img/objects/hands_PNG944.png";
 import hand from "./img/objects/phone_hand_PNG91.png";
 
 const Container = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
   width: 100%;
   margin-top: 2rem;
 `;
 
+const Canvas = styled.div`
+  width: 100%;
+  margin: 5% 5% 5% 5%;
+`;
 
-const beethovenImg = "https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzMyNjY1ODY5/wolfgang-mozart-9417115-2-402.jpg"
-const destination = document.getElementById("root");
+const Frame = styled.div`
+  display: flex;
+  position: relative;
+  background-color: white;
+  width: 80%;
+  height: 50rem;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+  background-color: ${(props) => props.bgColor};
+`;
 
-const DraggableObject = ({imageUrl=beethovenImg, text}) => {
-  console.log({imageUrl})
+const beethovenImg =
+  "https://www.biography.com/.image/t_share/MTE1ODA0OTcxNzMyNjY1ODY5/wolfgang-mozart-9417115-2-402.jpg";
 
-  const FontSize = text ? "15 px":"100 px"
-  imageUrl = text ? "" : imageUrl
-  return <Draggable>
-        <Resizable
-          defaultSize={{
-              width:320,
-              height:320,
-            }}
-          style={{
-            background: `url(${imageUrl})`,
-            backgroundSize: "contain",
-            backgroundRepeat: "no-repeat",
-            // font-size: `${FontSize}`,
-          }}
-          lockAspectRatio={true}
-        >{text}</Resizable>
-  </Draggable>
-}
-
-const EmojiDraggable = ({emoji}) => {
+const images = [
+  { ig: food1 },
+  { ig: food2 },
+  { ig: food3 },
+  { ig: food4 },
+  // { ig: food5 },
+  // { ig: food6 },
+  // { ig: food7 },
+  // { ig: food8 },
+  // { ig: animal1 },
+  // { ig: animal2 },
+  // { ig: animal3 },
+  // { ig: animal4 },
+  // { ig: animal5 },
+  // { ig: people1 },
+  // { ig: people2 },
+  // { ig: people3 },
+  // { ig: people4 },
+  // { ig: people5 },
+  // { ig: people6 },
+  // { ig: people7 },
+  // { ig: stuff1 },
+  // { ig: stuff2 },
+  // { ig: stuff3 },
+  // { ig: stuff4 },
+  // { ig: stuff5 },
+  // { ig: stuff6 },
+  // { ig: stuff7 },
+  // { ig: hand },
+];
+const App = () => {
+  const ref = useRef(null);
+  const [bgColor, setBgColor] = useState("#F9F9F9");
+  const { emojis, colors, images } = config;
+  const onButtonClick = useCallback(() => {
+    if (ref.current === null) {
+      return;
+    }
+    toJpeg(ref.current, { cacheBust: true })
+      .then((dataUrl) => {
+        const link = document.createElement("a");
+        link.download = "my-image-name.jpeg";
+        link.href = dataUrl;
+        link.click();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [ref]);
   return (
-    <Draggable >
-      <div className="handle emoji">{emoji}</div>
-    </Draggable>
+    <Canvas>
+      <Frame ref={ref} bgColor={bgColor}>
+        {/* <DraggableObject imageUrl={Images.food1}></DraggableObject> */}
+        <DraggableObject imageUrl={food1}></DraggableObject>
+        <DraggableObject imageUrl={food3}></DraggableObject>
+        <DraggableObject imageUrl={beethovenImg}></DraggableObject>
+        {emojis
+          .filter(() => Math.random() > 0.7)
+          .map((obj) => {
+            return <EmojiDraggable emoji={obj.emoji}></EmojiDraggable>;
+          })}
+
+        {images.map((obj, i) => {
+          return <DraggableObject imageUrl={obj.ig} key={i}></DraggableObject>;
+        })}
+      </Frame>
+      <Container>
+        <ColorInput value={bgColor} onChange={setBgColor} swatches={colors} />
+        <Button onClick={onButtonClick}>Screenshot</Button>
+      </Container>
+      <Footer></Footer>
+    </Canvas>
   );
-}
+};
 
-
-const Canvas = () => {
-  return <Container>
-      <div className = 'emojiBox' div>
-          {emojiList.filter(item => Math.random() > 0.7).map(obj => {
-            return <EmojiDraggable emoji={obj.emoji}></EmojiDraggable>
-          })}
-      </div>
-  </Container>
-}
-
-
-
-const Footer = () => {
-  return  <p>
-  Create by {" "}
-  <a href="http://bojne.com/" target="_blank">Yueh Han Huang</a> at <a href="https://hacklodge.org/" target="_blank">Hacklodge(S19)</a>. 
-  If you lile this, give a ⭐️ to my <a href="https://github.com/Bojne/Collager-party" target="_blank">GitHub Repo</a> is appreciated 👏.
-</p>
-}
-
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      color: "#F9F9F9",
-      url: beethovenImg,
-      images: [
-        { ig: food1 },
-        { ig: food2 },
-        { ig: food3 },
-        { ig: food4 },
-        { ig: food5 },
-        { ig: food6 },
-        { ig: food7 },
-        { ig: food8 },
-        { ig: animal1 },
-        { ig: animal2 },
-        { ig: animal3 },
-        { ig: animal4 },
-        { ig: animal5 },
-        { ig: people1 },
-        { ig: people2 },
-        { ig: people3 },
-        { ig: people4 },
-        { ig: people5 },
-        { ig: people6 },
-        { ig: people7 },
-        { ig: stuff1 },
-        { ig: stuff2 },
-        { ig: stuff3 },
-        { ig: stuff4 },
-        { ig: stuff5 },
-        { ig: stuff6 },
-        { ig: stuff7 },
-        { ig: hand }
-      ].filter(item => Math.random() > 0.81)
-    };
-  }
-  render() {
-    document.body.style.backgroundColor = this.state.color;
-    const scale = 0.3;
-    const styleScale = {
-      width: "100px",
-      userSelect: "none",
-      touchAction: "none"
-    };
-
-    return (
-      <div>
-        <div>
-          <p>
-            <TextField
-              label="Image address"
-              helperText="Add your own image via link!"
-               fullWidth
-              onChange={evt => this.updateImage(evt)}
-            />
-          </p>
-        </div>
-        <DraggableObject imageUrl={this.state.url}></DraggableObject>
-        <div className="imageBox">
-          {this.state.images.map(obj => {
-            // return <DraggableObject imageUrl={obj.ig}></DraggableObject> 
-            // #TODO: Make component render here
-            return this.renderImgDraggable(obj.ig);
-          })}
-        </div>
-        <Canvas></Canvas>
-        <div>
-          <p>Change Background Color: 🎨</p>
-        </div>
-        <TwitterPicker
-          color={ this.state.color}
-          onChangeComplete={color => this.updateColor(color)}
-           />
-       <Footer></Footer>
-      </div>
-      
-    );
-  }
-
-
-  renderImgDraggable(image_url) {
-    return (
-      // #TODO: Make component render the right path 
-      // <DraggableObject imageUrl={image_url}></DraggableObject>
-      <Draggable>
-          <Resizable
-            defaultSize={{
-              width: 150,
-              height: 150,
-            }}
-            style={{
-              background: `url(${image_url})`,
-              backgroundSize: "contain",
-              backgroundRepeat: "no-repeat",
-            }}
-            lockAspectRatio={true}
-          ></Resizable>
-        </Draggable>
-    );
-  }
-  updateColor(evt) {
-    this.setState({
-      color: evt.hex
-    });
-  }
-  updateImage(evt) {
-    this.setState({
-      url: evt.target.value
-    });
-  }
-}
-
+const destination = document.getElementById("root");
 ReactDOM.render(<App />, destination);
-
-
