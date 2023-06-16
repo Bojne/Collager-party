@@ -109,11 +109,11 @@ const App = () => {
                 Shuffle Emoji
               </Button>
             </Navbar.Section>
-            <Navbar.Section mt="md">
+            {/* <Navbar.Section mt="md">
               <Button color="orange" onClick={onShuffleImageButtonClick}>
                 Shuffle Image
               </Button>
-            </Navbar.Section>
+            </Navbar.Section> */}
             <Navbar.Section mt="md" grow>
               <Button onClick={onButtonClick}>Screenshot</Button>
             </Navbar.Section>
