@@ -140,7 +140,9 @@ const App = () => {
             width={{ sm: 150, lg: 250 }}
           >
             <Navbar.Section>
+              <p>Background Color</p>
               <ColorInput
+                format="rgba"
                 value={bgColor}
                 onChange={setBgColor}
                 swatches={colors}
@@ -148,24 +150,24 @@ const App = () => {
             </Navbar.Section>
             <Navbar.Section mt="md">
               <Button
-                color="yellow"
+                color="cyan"
                 variant="outline"
                 onClick={onShuffleEmojiButtonClick}
               >
-                Shuffle Emoji 💫
+                🔀 Emoji
               </Button>
             </Navbar.Section>
             <Navbar.Section mt="md">
               <Button
-                color="orange"
+                color="lime"
                 variant="outline"
                 onClick={onShuffleImageButtonClick}
               >
-                Shuffle Image 💫
+                🔀 Image
               </Button>
             </Navbar.Section>
             <Navbar.Section mt="md" grow>
-              <Button onClick={onButtonClick}>Screenshot</Button>
+              <Button onClick={onButtonClick}> 📸 Screenshot</Button>
             </Navbar.Section>
             <Navbar.Section mt="md">
               <Footer></Footer>
