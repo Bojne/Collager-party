@@ -116,7 +116,7 @@ const App = () => {
     toJpeg(ref.current, { cacheBust: true })
       .then((dataUrl) => {
         const link = document.createElement("a");
-        link.download = "my-image-name.jpeg";
+        link.download = "my-collage.jpeg";
         link.href = dataUrl;
         link.click();
       })
@@ -147,13 +147,21 @@ const App = () => {
               />
             </Navbar.Section>
             <Navbar.Section mt="md">
-              <Button color="yellow" onClick={onShuffleEmojiButtonClick}>
-                Shuffle Emoji
+              <Button
+                color="yellow"
+                variant="outline"
+                onClick={onShuffleEmojiButtonClick}
+              >
+                Shuffle Emoji 💫
               </Button>
             </Navbar.Section>
             <Navbar.Section mt="md">
-              <Button color="orange" onClick={onShuffleImageButtonClick}>
-                Shuffle Image
+              <Button
+                color="orange"
+                variant="outline"
+                onClick={onShuffleImageButtonClick}
+              >
+                Shuffle Image 💫
               </Button>
             </Navbar.Section>
             <Navbar.Section mt="md" grow>
