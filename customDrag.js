@@ -1,8 +1,21 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import { Resizable } from "re-resizable";
 import Draggable from "react-draggable";
 
 export const DraggableObject = ({ imageUrl, text }) => {
+  const [backgroundStyle, setBackgroundStyle] = useState({
+    backgroundSize: "contain",
+    backgroundRepeat: "no-repeat",
+  });
+
+  useEffect(() => {
+    setBackgroundStyle((prevStyle) => ({
+      ...prevStyle,
+      backgroundImage: `url(${imageUrl})`,
+    }));
+  }, [imageUrl]);
+
   console.log("Import Image", imageUrl);
   imageUrl = text ? "" : imageUrl;
   return (
@@ -12,12 +25,7 @@ export const DraggableObject = ({ imageUrl, text }) => {
           width: 220,
           height: 220,
         }}
-        style={{
-          background: `url(${imageUrl})`,
-          backgroundSize: "contain",
-          backgroundRepeat: "no-repeat",
-          // font-size: `${FontSize}`,
-        }}
+        style={backgroundStyle}
         lockAspectRatio={true}
       >
         {text}
