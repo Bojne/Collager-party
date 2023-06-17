@@ -5,7 +5,7 @@ const Footer = () => {
       <p>
         Create by{" "}
         <a href="http://bojne.com/" target="_blank">
-          Aaron Huang
+          Bojne
         </a>{" "}
       </p>
       <p>
