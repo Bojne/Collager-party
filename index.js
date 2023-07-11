@@ -36,6 +36,18 @@ import people4 from "./img/people/leonardo_dicaprio_PNG43.png";
 import people5 from "./img/people/thinking_woman_PNG11634.png";
 import people6 from "./img/people/dancer_PNG97.png";
 import people7 from "./img/people/baby_PNG17912.png";
+import people8 from "/img/people/astronaut_PNG69.png";
+import people9 from "/img/people/baby_PNG17922.png";
+import people10 from "/img/people/baby_PNG51705.png";
+import people11 from "/img/people/baby_PNG51739.png";
+import people12 from "/img/people/dancer_PNG97.png";
+import people13 from "/img/people/diver_PNG73.png";
+import people14 from "/img/people/leonardo_dicaprio_PNG19.png";
+import people15 from "/img/people/leonardo_dicaprio_PNG31.png";
+import people16 from "/img/people/thinking_man_PNG11588.png";
+import people17 from "/img/people/thinking_man_PNG11612.png";
+import people18 from "/img/people/thinking_woman_PNG11622.png";
+import people19 from "/img/people/thinking_woman_PNG11628.png";
 import stuff1 from "./img/objects/mountain_PNG30.png";
 import stuff2 from "./img/objects/alarm_clock_PNG94.png";
 import stuff3 from "./img/objects/earth_PNG18.png";
@@ -45,6 +57,7 @@ import stuff6 from "./img/objects/finger_PNG6307.png";
 import stuff7 from "./img/objects/hands_PNG944.png";
 import hand from "./img/objects/phone_hand_PNG91.png";
 import animal5 from "./img/animal/giraffe_PNG13518.png";
+import dogGif from "./img/gifs/dog.gif";
 
 const ImageCollection = React.memo((_update) => {
   const allImages = [
@@ -66,6 +79,18 @@ const ImageCollection = React.memo((_update) => {
     people5,
     people6,
     people7,
+    people8,
+    people9,
+    people10,
+    people11,
+    people12,
+    people13,
+    people14,
+    people15,
+    people16,
+    people17,
+    people18,
+    people19,
     stuff1,
     stuff2,
     stuff3,
@@ -75,10 +100,12 @@ const ImageCollection = React.memo((_update) => {
     stuff7,
     hand,
     animal5,
+    dogGif,
   ];
   const ImageLimit = 5;
   const imageSet = allImages
-    .filter(() => Math.random() > 0.5)
+    .filter(() => Math.random() > 0.5) // cut
+    .sort(() => Math.random() - 0.5) // suffle
     .slice(0, ImageLimit);
   return imageSet.map((obj) => {
     return <DraggableObject imageUrl={obj}></DraggableObject>;
