@@ -29,8 +29,6 @@ import animal10 from "./img/animal/chicken_PNG2172.png";
 import animal11 from "./img/animal/cow.png";
 import animal12 from "./img/animal/dinosaur_PNG16606.png";
 import animal13 from "./img/animal/dolphin_PNG9127.png";
-import animal14 from "./img/animal/giraffe_PNG13518.png";
-import animal15 from "./img/animal/giraffe.png";
 import animal16 from "./img/animal/labrador_retriever_PNG59.png";
 import animal17 from "./img/animal/labrador_retriever_PNG84.png";
 import animal18 from "./img/animal/labrador_retriever_PNG91.png";
@@ -89,8 +87,6 @@ const ImageCollection = React.memo((_update) => {
     animal11,
     animal12,
     animal13,
-    animal14,
-    animal15,
     animal16,
     animal17,
     animal18,
