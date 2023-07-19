@@ -22,6 +22,19 @@ import animal1 from "./img/animal/harbor_seal_PNG1.png";
 import animal2 from "./img/animal/shrimps_PNG18277.png";
 import animal3 from "./img/animal/birds_PNG44.png";
 import animal4 from "./img/animal/shark_PNG18811.png";
+import animal5 from "./img/animal/bear_PNG1196.png";
+import animal7 from "./img/animal/bear_PNG23456.png";
+import animal8 from "./img/animal/bear_PNG23458.png";
+import animal10 from "./img/animal/chicken_PNG2172.png";
+import animal11 from "./img/animal/cow.png";
+import animal12 from "./img/animal/dinosaur_PNG16606.png";
+import animal13 from "./img/animal/dolphin_PNG9127.png";
+import animal14 from "./img/animal/giraffe_PNG13518.png";
+import animal15 from "./img/animal/giraffe.png";
+import animal16 from "./img/animal/labrador_retriever_PNG59.png";
+import animal17 from "./img/animal/labrador_retriever_PNG84.png";
+import animal18 from "./img/animal/labrador_retriever_PNG91.png";
+import animal19 from "./img/animal/panda_PNG33.png";
 import food1 from "./img/food/fried_egg_PNG79.png";
 import food2 from "./img/food/bean.png";
 import food3 from "./img/food/lime_PNG52.png";
@@ -56,7 +69,6 @@ import stuff5 from "./img/objects/hands_PNG958.png";
 import stuff6 from "./img/objects/finger_PNG6307.png";
 import stuff7 from "./img/objects/hands_PNG944.png";
 import hand from "./img/objects/phone_hand_PNG91.png";
-import animal5 from "./img/animal/giraffe_PNG13518.png";
 import dogGif from "./img/gifs/dog.gif";
 
 const ImageCollection = React.memo((_update) => {
@@ -70,6 +82,19 @@ const ImageCollection = React.memo((_update) => {
     animal2,
     animal3,
     animal4,
+    animal5,
+    animal7,
+    animal8,
+    animal10,
+    animal11,
+    animal12,
+    animal13,
+    animal14,
+    animal15,
+    animal16,
+    animal17,
+    animal18,
+    animal19,
     food6,
     food7,
     people1,
